@@ -1,0 +1,61 @@
+$color__main:#222222;
+$color__banner: #F1E4E6;
+$color__font__main:#FFFFFF;
+$color__font__call:#F16D7F;
+$width__container__desktop:1140px;
+$height__navbar:75px;
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width:$width__container__desktop;
+    margin: 0 auto;
+}
+
+.navbar{
+    background: $color__main;
+    width: 100%;
+    height: $height__navbar;
+
+    .navbar__icons {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+        .item_search {
+            margin-left: 41px;
+        }
+        .item__mob__disapp{
+            margin-right: 33px;
+        }
+
+        .item__cart{
+            position: relative;
+            text-decoration: none;
+
+            .item__cart__count{
+                background: $color__font__call;
+                color:$color__font__main;
+                border-radius: 50%;
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                position: absolute;
+                top:-20px;
+                right: -5px;
+                font-size: 12px;
+                line-height: 14px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+            }
+        }
+        
+    }
+}
