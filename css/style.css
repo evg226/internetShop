@@ -361,7 +361,6 @@ body {
   background: #E1E1E1;
   height: 50px;
   border: none;
-  border-radius: none;
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
   padding: 7px 0 7px 22px;
@@ -369,7 +368,6 @@ body {
 }
 
 .button {
-  border-radius: none;
   box-sizing: border-box;
   width: 100px;
   height: 50px;
@@ -404,4 +402,8 @@ body {
   box-sizing: border-box;
   padding: 7px;
   margin: 0 4px;
+}
+
+.social__item:hover {
+  background: #F16D7F;
 }/*# sourceMappingURL=style.css.map */

@@ -374,7 +374,7 @@ background: $color__main;
     background: #E1E1E1;
     height: 50px;
     border: none;
-    border-radius: none;
+    // border-radius: none;
     border-top-left-radius: 22px;
     border-bottom-left-radius: 22px;
     padding: 7px 0 7px 22px ;
@@ -383,7 +383,7 @@ background: $color__main;
 }
 
 .button{
-    border-radius: none;
+    // border-radius: none;
     box-sizing: border-box;
     width: 100px;
     height: 50px;
@@ -419,4 +419,8 @@ line-height: 19px;
     margin:0 4px;
     
     
+}
+
+.social__item:hover{
+    background: $color__font__call;
 }
