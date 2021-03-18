@@ -10,8 +10,11 @@ $height__banner__desktop:764px;
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    border: 0 none;
+}
 
+body{
+    font-family: 'Lato', sans-serif;
 }
 
 
@@ -24,13 +27,13 @@ $height__banner__desktop:764px;
     background: $color__main;
     width: 100%;
     height: $height__navbar;
-
-    .navbar__icons {
+}
+.navbar__icons {
         display:flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
-
+}
         .item_search {
             margin-left: 41px;
         }
@@ -47,7 +50,7 @@ $height__banner__desktop:764px;
         .item__cart{
             position: relative;
             text-decoration: none;
-
+        }
             .item__cart__count{
                 background: $color__font__call;
                 color:$color__font__main;
@@ -65,10 +68,10 @@ $height__banner__desktop:764px;
                 justify-content: center;
                 
             }
-        }
         
-    }
-}
+        
+    
+
 
 .banner{
     height: $height__banner__desktop;
@@ -124,19 +127,27 @@ $height__banner__desktop:764px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    
+}
+.main__offer__item:hover{
+    background:none;
 }
 .main__offer__item img {
     position: absolute;
     z-index: -1;
+
 }
 .main__offer__item__text{
     text-transform: uppercase;
+    
 }
 .main__offer__item__text_top{
     text-align: center;
     font-size: 16px;
     line-height: 19px;
     color: $color__font__main;
+    
 }
 
 .main__offer__item__text_bottom{
@@ -188,11 +199,50 @@ $height__banner__desktop:764px;
     width: 360px;
     height: 580px;
     margin-top:30px;
+    text-decoration: none;
+    position: relative;
+    
 }
+
+
+.add__to__card{
+    background: rgba(33, 22, 22, 0.7);
+    position: absolute;
+    color: #FFFFFF;
+    width: 100%;
+    height: 420px;
+    display: none;
+    
+    
+}
+
+.featured__items__card__img:hover :first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add__to__card__link{
+    border: 1px solid  #FFFFFF;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.add__to__card__link::before{
+    content: url(/img/Vector.svg);
+    padding-right: 8px;
+}
+
+
+
 .featured__items__card__text{
     text-align: left;
     margin-left: 16px;
     margin-right: 29px ;
+    display: inline-block;
+    text-decoration: none;
 }
 
 .featured__items__card__text_cap{
@@ -201,6 +251,7 @@ $height__banner__desktop:764px;
     color: #000000;
     text-transform: uppercase;
     margin-top: 25px;
+    text-align: left;
 }
 
 .featured__items__card__text_p{
