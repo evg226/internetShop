@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: "Lato", sans-serif;
 }
 
@@ -120,7 +120,7 @@
   font-size: 14px;
   line-height: 26px;
   color: #222222;
-  font-weight: 700;
+  font-weight: 900;
 }
 .header__link:hover {
   background: #f6f6f6;
@@ -165,4 +165,69 @@
 }
 .slider__caption_red {
   color: #f16d7f;
+}
+
+.category__container {
+  display: flex;
+  margin-bottom: 100px;
+  justify-content: space-between;
+  height: 800px;
+}
+.category__left {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.category__left_top {
+  background-image: url(../img/category/banner1.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 65%;
+}
+.category__left_bottom {
+  background-image: url(../img/category/banner3.jpg);
+  height: 32%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.category__right {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.category__right_top {
+  background-image: url(../img/category/banner2.jpg);
+  height: 32%;
+  background-repeat: no-repeat;
+  background-position: center -40px;
+}
+.category__right_bottom {
+  background-image: url(../img/category/banner4.jpg);
+  height: 65%;
+}
+.category__position {
+  position: relative;
+}
+.category__badge {
+  position: absolute;
+  top: 25px;
+  left: 1px;
+  background: #ffffff;
+  padding: 16px;
+}
+.category__badge_top {
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #222222;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.category__badge_bottom {
+  font-size: 30px;
+  letter-spacing: 0px;
+  color: #f16d7f;
+  font-weight: 900;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

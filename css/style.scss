@@ -1,5 +1,5 @@
-.body {
-    font-family: 'Lato', sans-serif;
+body {
+    font-family: "Lato", sans-serif;
 }
 
 .container {
@@ -148,7 +148,7 @@
         font-size: 14px;
         line-height: 26px;
         color: #222222;
-        font-weight: 700;
+        font-weight: 900;
     }
 
     &__link:hover {
@@ -203,5 +203,82 @@
 
     &__caption_red {
         color: #f16d7f;
+    }
+}
+
+.category {
+    &__container {
+        display: flex;
+        margin-bottom: 100px;
+        justify-content: space-between;
+        height: 800px;
+    }
+
+    &__left {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_top {
+            background-image: url(../img/category/banner1.jpg);
+            background-repeat: no-repeat;
+            background-position: top center;
+            height: 65%;
+        }
+
+        &_bottom {
+            background-image: url(../img/category/banner3.jpg);
+            height: 32%;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+        }
+    }
+
+    &__right {
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_top {
+            background-image: url(../img/category/banner2.jpg);
+            height: 32%;
+            background-repeat: no-repeat;
+            background-position: center -40px;
+        }
+
+        &_bottom {
+            background-image: url(../img/category/banner4.jpg);
+            height: 65%;
+        }
+    }
+
+    &__position {
+        position: relative;
+    }
+
+    &__badge {
+        position: absolute;
+        top: 25px;
+        left: 1px;
+        background: #ffffff;
+        padding: 16px;
+
+        &_top {
+            font-size: 18px;
+            letter-spacing: 0px;
+            color: #222222;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        &_bottom {
+            font-size: 30px;
+            letter-spacing: 0px;
+            color: #f16d7f;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
     }
 }
