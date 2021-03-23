@@ -317,6 +317,7 @@ body {
   display: none;
 }
 .product__item:hover {
+  box-sizing: border-box;
   border: 1px solid rgba(33, 22, 22, 0.7);
 }
 .product__item:hover > .product__item_img_dark {
@@ -340,4 +341,97 @@ body {
 .product__to-cart::before {
   content: url(../img/product/add_to_cart.png);
   margin-right: 6px;
+}
+.product__button {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0 110px;
+}
+.product__button-link {
+  text-decoration: none;
+  padding: 0 20px;
+  background: #f16d7f;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 54px;
+  color: #ffffff;
+  font-weight: 700;
+}
+.product__button-link:after {
+  content: url(../img/product/button_aarow.png);
+  margin-left: 6px;
+}
+
+.feature__container {
+  display: flex;
+  margin-bottom: 100px;
+}
+.feature__banner {
+  position: relative;
+  max-height: 530px;
+  display: inline-block;
+}
+.feature__banner:hover .feature__shadow-picture {
+  display: block;
+}
+.feature__main-picture {
+  width: 100%;
+  height: 100%;
+}
+.feature__shadow-picture {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.feature__header {
+  position: absolute;
+  z-index: 2;
+  left: 24px;
+  top: 140px;
+  font-size: 54px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.feature__header-red {
+  color: #f16d7f;
+}
+.feature__header-text {
+  font-size: 35px;
+}
+.feature__box {
+  background: #222224;
+  flex: 1 0 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.feature__box-item {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+.feature__box-item:hover {
+  box-sizing: border-box;
+  background-color: #3a3838;
+}
+.feature__box_caption {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #fbfbfb;
+  font-weight: 700;
+  margin-bottom: 4%;
+}
+.feature__box_text {
+  width: 236px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #fbfbfb;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
