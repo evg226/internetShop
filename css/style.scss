@@ -128,6 +128,7 @@ body {
         list-style: none;
         display: flex;
         justify-content: center;
+        padding: 0;
     }
 
     &__line {
@@ -567,10 +568,10 @@ body {
     &__container {
         display: flex;
         align-items: center;
-        max-height: 440px;
+        height: 440px;
         justify-content: space-evenly;
-        padding: 16% 0;
-        box-sizing: border-box;
+
+        // box-sizing: border-box;
 
     }
 
@@ -637,6 +638,7 @@ body {
         flex: 0 0 30%;
         height: 4px;
         background: #d6d6d6;
+        display: inline-block;
     }
 
     &__line_selected {
@@ -713,5 +715,100 @@ body {
 
     &__button:focus {
         outline: none;
+    }
+}
+
+.footer {
+    margin-top: 120px;
+
+    &__brand {
+        &_container {
+            display: flex;
+        }
+
+        &_desc {
+            font-size: 14px;
+            letter-spacing: 0px;
+            line-height: 24px;
+            color: #898989;
+            font-weight: 300;
+            margin: 15px;
+        }
+
+        &_nav {
+            flex: 0 0 19%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_nav_start {
+            flex: 0 0 35%;
+            margin-right: 7%;
+        }
+
+        &_item_cap {
+            font-size: 18px;
+            letter-spacing: 0px;
+            // line-height: 26px;
+            color: #f16d7f;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 20px 0;
+        }
+
+        &_item {
+            font-size: 16px;
+            letter-spacing: 0px;
+            line-height: 48px;
+            color: #898989;
+            font-weight: 400;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+    }
+
+
+
+    &__copyright {
+        margin-top: 90px;
+        background: #e6e6e6;
+        height: 80px;
+    }
+
+    &__copyright_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__left {
+        font-size: 16px;
+        letter-spacing: 0px;
+        line-height: 42px;
+        color: #7a7a7a;
+        font-weight: 400;
+    }
+
+    &__social_group {
+        display: flex;
+
+
+    }
+
+    &__social {
+        background: #ffffff;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 4px;
+    }
+
+    &__social:hover {
+        background: #f16d7f;
     }
 }
