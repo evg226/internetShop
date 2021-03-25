@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Lato", sans-serif;
 }
@@ -42,30 +43,79 @@ body {
 }
 .header__search-group {
   display: flex;
+  height: 42px;
 }
-.header__button-browse {
+.header__browse {
   background: #f6f6f6;
-  height: 40px;
-  padding-left: 20px;
-  padding-right: 10px;
+  border: 1px solid #e6e6e6;
+  position: relative;
+}
+.header__browse summary {
   font-size: 14px;
   letter-spacing: 0px;
-  line-height: 32px;
   color: #222222;
-  font-weight: 300;
+  font-weight: 500;
+  height: 100%;
+  width: 100%;
+  padding: 11px 20px 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+.header__browse summary::-webkit-details-marker {
+  display: none;
+}
+.header__browse summary:after {
+  margin-left: 5px;
+  content: "▼";
+}
+.header__browse summary:focus {
+  outline: none;
+}
+.header__browse[open] .header__browse_nav {
+  background-color: white;
+  left: 0px;
+  top: 41px;
+  position: absolute;
+  white-space: nowrap;
   display: flex;
-  align-items: center;
-  border: 1px solid #e6e6e6;
+  flex-direction: column;
+  padding: 0 20px 10px;
+  box-sizing: border-box;
 }
-.header__button-browse:after {
-  content: url(../img/top/search_down.png);
-  padding-left: 5px;
+.header__browse_nav:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  top: -7px;
+  left: 34px;
+  background: white;
+  position: absolute;
+  transform: rotate(45deg);
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
 }
-.header__button-browse:hover {
+.header__browse_link {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #222222;
+  font-weight: 500;
+  padding: 8px 0;
+}
+.header__browse_link_group {
+  text-transform: uppercase;
+  margin: 8px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.header__browse_link:hover {
+  color: #f16d7f;
+}
+.header__browse:hover {
   background: none;
 }
 .header__search-form {
-  margin-left: -1px;
+  margin-left: 0;
   display: flex;
 }
 .header__search-text {
@@ -74,7 +124,6 @@ body {
   line-height: 32px;
   color: #a4a4a4;
   font-weight: 300;
-  height: 40px;
   border: 1px solid #e6e6e6;
   border-radius: 0;
   padding: 0 18px 0;
@@ -98,21 +147,90 @@ body {
   background: none;
 }
 .header__cart {
-  margin-right: 30px;
+  margin-right: 10%;
+  position: relative;
+}
+.header__cart summary {
+  height: 100%;
+  width: 100%;
+  list-style-type: none;
+}
+.header__cart summary::marker {
+  display: none;
+}
+.header__cart summary::-webkit-details-marker {
+  display: none;
+}
+.header__cart summary:focus {
+  outline: none;
+}
+.header__cart[open] .header__cart_nav {
+  background-color: white;
+  right: -30px;
+  top: 41px;
+  position: absolute;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 10px;
+  box-sizing: border-box;
+}
+.header__cart_link {
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 100px;
+}
+.header__cart_link:hover {
+  background: #f7f4f4;
+}
+.header__cart_photo {
+  height: 100%;
+}
+.header__cart_product {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e8e8e8;
+}
+.header__cart_caption {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: #222222;
+  font-weight: 700;
+}
+.header__cart_price {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
+  color: #f16d7f;
+  font-weight: 700;
+}
+.header__cart_total {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #222222;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 10px 0;
+}
+.header__cart_go {
+  justify-content: center;
+  padding: 10px 0;
+}
+.header__cart_go:hover {
+  background: #e6e6e6;
 }
 .header__my-account {
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #f16d7f;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border: 1px solid #e6e6e6;
 }
-.header__my-account:after {
-  content: url(../img/top/myaccount-down.png);
-  padding-left: 5px;
+.header__my-account summary {
+  white-space: nowrap;
 }
 .header__my-account:hover {
   background: none;
