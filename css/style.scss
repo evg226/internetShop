@@ -94,6 +94,7 @@ body {
         left: 0px;
         top: 41px;
         position: absolute;
+        z-index: 10;
         white-space: nowrap;
         display: flex;
         flex-direction: column;
@@ -210,6 +211,7 @@ body {
         right: -30px;
         top: 41px;
         position: absolute;
+        z-index: 10;
         white-space: nowrap;
         display: flex;
         flex-direction: column;
@@ -280,6 +282,7 @@ body {
     &__my-account {
         height: 40px;
         background: #f16d7f;
+        margin-right: 20px;
     }
 
     &__my-account summary {
@@ -296,10 +299,15 @@ body {
         display: flex;
         justify-content: center;
         padding: 0;
+        margin: 0;
     }
 
     &__line {
         border: 1px solid #e6e6e6;
+    }
+
+    &__item {
+        position: relative;
     }
 
     &__link {
@@ -307,14 +315,137 @@ body {
         text-transform: uppercase;
         padding: 20px;
         font-size: 14px;
-        line-height: 26px;
+        display: flex;
         color: #222222;
         font-weight: 900;
+
+
     }
 
     &__link:hover {
         background: #f6f6f6;
     }
+
+
+
+    &__subnav {
+        position: absolute;
+        top: 56px;
+        display: none;
+        // left: 0;
+        list-style: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 260px;
+        width: 500px;
+        background: #fbfbfb;
+        padding: 10px 0;
+        border-top: 1px solid #e6e6e6;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+
+    &__subnav:before {
+        content: '';
+        display: block;
+        width: 12px;
+        height: 12px;
+        top: -7px;
+        background: #fbfbfb;
+        position: absolute;
+        transform: rotate(45deg);
+        border-top: 1px solid #e6e6e6;
+        border-left: 1px solid #e6e6e6;
+    }
+
+    &__subitem {
+        max-width: 40%;
+
+    }
+
+    &__subitem img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__item:hover &__subnav {
+        display: flex;
+    }
+
+    &__subnav_1 {
+        left: 0;
+    }
+
+    &__subnav_2 {
+        left: -60px;
+    }
+
+    &__subnav_3 {
+        left: -170px;
+    }
+
+    &__subnav_4 {
+        right: -100px;
+    }
+
+    &__item:hover &__subnav {
+        display: flex;
+    }
+
+    &__subnav_1:before {
+        left: 34px;
+    }
+
+    &__subnav_2:before {
+        left: 94px;
+    }
+
+    &__subnav_3:before {
+        left: 200px;
+    }
+
+    &__subnav_4:before {
+        right: 150px;
+    }
+
+
+    &__sublink {
+        font-size: 14px;
+        color: #222222;
+        font-weight: 500;
+        padding: 9px 20px;
+        margin: 0 5px;
+        display: flex;
+        text-decoration: none;
+        white-space: nowrap;
+        position: relative;
+    }
+
+    &__sublink_sale {
+        position: absolute;
+        bottom: 20%;
+        right: 15%;
+        width: 30%;
+        color: #f6f6f6;
+        font-size: 20px;
+        font-weight: 900;
+        white-space: pre-line;
+
+    }
+
+    &__sublink:hover {
+        color: #f16d7f;
+    }
+
+    &__sublink_caption {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+
+
 }
 
 .slider {
@@ -370,7 +501,7 @@ body {
 .category {
     &__container {
         display: flex;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
         justify-content: space-between;
         height: 800px;
 
@@ -482,7 +613,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
 
     }
 
@@ -537,11 +668,11 @@ body {
         color: #ffffff;
         // color: #000000;
         font-weight: 700;
-        background: #f16d7f;
+        background: #3a3838;
     }
 
     &__to-cart:hover {
-        background: #3a3838;
+        background: none;
     }
 
     &__to-cart::before {
@@ -586,7 +717,7 @@ body {
     &__button {
         display: flex;
         justify-content: center;
-        margin: 60px 0 110px;
+        margin: 20px 0 0;
     }
 
     &__button-link {
@@ -617,20 +748,21 @@ body {
 .feature {
     &__container {
         display: flex;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
+        margin-top: 80px;
     }
 
     &__banner {
         position: relative;
         height: 530px;
-        display: inline-block;
+        display: flex;
         background: url(..//img/feature/main_pic.jpg) no-repeat center top;
-        flex: 0 0 65%;
+        flex: 0 0 64%;
     }
 
     &__banner:hover {
         background: radial-gradient(circle at 70%, rgba(2555, 255, 255, 0)0%, rgba(34, 34, 36, 1)80%), url(..//img/feature/main_pic.jpg) no-repeat center top;
-        flex: 0 0 65%;
+        // flex: 0 0 65%;
     }
 
     &__header {
@@ -650,13 +782,13 @@ body {
     }
 
     &__header-text {
-        font-size: 35px;
+        font-size: 34px;
     }
 
     &__box {
         background: #222224;
 
-        flex: 1 0 35%;
+        flex: 0 0 35%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -688,7 +820,7 @@ body {
         }
 
         &_text {
-            width: 236px;
+            max-width: 236px;
             font-size: 14px;
             letter-spacing: 0px;
             line-height: 24px;
@@ -864,7 +996,7 @@ body {
 }
 
 .footer {
-    margin-top: 120px;
+    margin-top: 90px;
 
     &__brand {
         &_container {
@@ -911,12 +1043,16 @@ body {
             display: inline-block;
         }
 
+        &_item:hover {
+            color: #f16d7f;
+        }
+
     }
 
 
 
     &__copyright {
-        margin-top: 90px;
+        margin-top: 50px;
         background: #e6e6e6;
         height: 80px;
     }
