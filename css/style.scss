@@ -330,8 +330,9 @@ body {
 
     &__subnav {
         position: absolute;
-        top: 56px;
+        top: 54px;
         display: none;
+        z-index: 10;
         // left: 0;
         list-style: none;
         flex-direction: column;
@@ -647,9 +648,10 @@ body {
         position: relative;
         margin: 0.7%;
         // text-decoration: none;
-        border:1px solid transparent;
-        &:hover{
-            border:1px solid #e1e1e1;
+        border: 1px solid transparent;
+
+        &:hover {
+            border: 1px solid #e1e1e1;
         }
     }
 
@@ -661,16 +663,17 @@ body {
         position: absolute;
         left: 0;
         top: 100px;
-        width   : 100%;
-        
-        
+        width: 100%;
+
+
         // margin-left: -75px;
         display: none;
         justify-content: center;
         align-items: center;
-        
+
     }
-    &__to-cart-link{
+
+    &__to-cart-link {
         text-decoration: none;
         padding: 14px;
         border: 1px solid #ffffff;
@@ -696,7 +699,7 @@ body {
     &__link {
         display: block;
         text-decoration: none;
-        
+
 
     }
 
@@ -761,7 +764,7 @@ body {
 .feature {
     &__container {
         display: flex;
-        margin-bottom: 80px;
+
         margin-top: 80px;
     }
 
@@ -853,7 +856,7 @@ body {
         align-items: center;
         height: 440px;
         justify-content: space-evenly;
-
+        margin-bottom: 80px;
         // box-sizing: border-box;
 
     }
