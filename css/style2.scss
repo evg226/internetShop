@@ -3,7 +3,6 @@ $color-text-products:#636363;
 
 body {
     color: $color-text-products;
-    font-family: "lato", sans-serif;
 }
 
 .bradcrumb {
@@ -39,6 +38,7 @@ body {
     color: #f8f3f4;
 }
 
+
 .sidebar {
     flex: 0 0 25%;
 }
@@ -46,8 +46,6 @@ body {
 .products {
     flex-grow: 1;
 }
-
-
 
 
 .feature {
