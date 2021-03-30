@@ -178,12 +178,12 @@
   font-size: 13px;
   color: #ffffff;
   font-weight: 700;
-  background: #3a3838;
+  background: none;
   display: flex;
   align-items: center;
 }
 .product__to-cart-link:hover {
-  background: none;
+  background: #3a3838;
 }
 .product__to-cart-link::before {
   content: url(../img/product/add_to_cart.png);

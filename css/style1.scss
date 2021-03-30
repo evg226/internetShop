@@ -230,13 +230,13 @@
         color: #ffffff;
         // color: #000000;
         font-weight: 700;
-        background: #3a3838;
+        background: none;
         display: flex;
         align-items: center;
     }
 
     &__to-cart-link:hover {
-        background: none;
+        background: #3a3838;
     }
 
     &__to-cart-link::before {
