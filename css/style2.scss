@@ -31,29 +31,100 @@ body {
     }
 }
 
-.products-sidebar__container {
-    display: flex;
-    height: 400px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background: #636363;
-    color: #f8f3f4;
-}
-
-.card {
-    font-size: 50px;
-}
-
-
-.sidebar {
-    flex: 0 0 25%;
-}
 
 .products {
-    flex-grow: 1;
-}
+    &__container {
+        display: flex;
+    }
 
+    &__sidebar {
+        flex: 0 0 25%;
+
+        &-nav {
+            & summary {
+                text-transform: uppercase;
+                color: $color-red;
+                font-weight: 700;
+                border-bottom: 1px solid #ebebeb;
+                margin: 10px 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                &::marker {
+                    display: none;
+                }
+
+                &::-moz-details-marker {
+                    display: none;
+                }
+
+                &::-webkit-details-marker {
+                    display: none;
+                }
+
+
+                &:before {
+                    content: '';
+                    width: 5px;
+                    height: 40px;
+                    background-color: $color-red;
+                    margin-right: 10px;
+                }
+
+                &:after {
+                    content: '\25BC';
+                    justify-self: end;
+                    margin-left: auto;
+                }
+
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+
+            &-items {
+                display: flex;
+                flex-direction: column;
+
+                :hover {
+                    font-weight: 700;
+                }
+            }
+
+            &-link {
+                color: #6f6e6e;
+                padding: 10px;
+                display: inline-block;
+
+
+            }
+        }
+
+        // &__cart[open] &__cart_nav {
+        //     background-color: white;
+        //     right: -30px;
+        //     top: 41px;
+        //     position: absolute;
+        //     z-index: 10;
+        //     white-space: nowrap;
+        //     display: flex;
+        //     flex-direction: column;
+        //     padding: 0 20px 10px;
+        //     box-sizing: border-box;
+        // }
+
+
+
+    }
+
+    &__group {
+        flex: 1 0 75%;
+    }
+
+}
 
 .feature {
     // width: 100%;
