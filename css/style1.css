@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .slider {
   background: #e8e8e8;
   margin-bottom: 90px;
@@ -154,10 +155,9 @@
   min-width: 240px;
   position: relative;
   margin: 0.7%;
-  border: 1px solid transparent;
 }
 .product__item:hover {
-  border: 1px solid #e1e1e1;
+  box-shadow: 0 0 5px #d8d8d8;
 }
 .product__item:hover .product__to-cart {
   display: flex;
@@ -183,7 +183,7 @@
   align-items: center;
 }
 .product__to-cart-link:hover {
-  background: #3a3838;
+  box-shadow: 0 0 30px #d8d8d8;
 }
 .product__to-cart-link::before {
   content: url(../img/product/add_to_cart.png);
@@ -225,19 +225,19 @@
 .product__button-link {
   text-decoration: none;
   padding: 0 20px;
-  background: #f16d7f;
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 54px;
-  color: #ffffff;
+  color: #222222;
   font-weight: 700;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #f16d7f;
 }
 .product__button-link:hover {
-  background: none;
-  color: #222222;
+  background: #f16d7f;
+  color: #ffffff;
 }
 .product__button-link:after {
-  content: url(../img/product/button_aarow.png);
+  content: "→";
   margin-left: 6px;
+  font-weight: 900;
 }/*# sourceMappingURL=style1.css.map */
