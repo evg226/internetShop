@@ -402,74 +402,53 @@ body {
     }
 }
 
-
-
-
-
-
-
-
 .feature {
+
     // width: 100%;
-    background: #222224;
+    &_pro {
+        background: #222224;
+    }
 
     &__box {
-        // background: #222224;
-        // flex: 0 0 100%;
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: space-evenly;
-        flex-direction: row;
-        flex: 0 0 100%;
-        height: 340px;
-        align-items: center;
+        &_pro {
 
-        &-item {
+            flex-direction: row;
+            flex: 0 0 100%;
+            height: 340px;
+            align-items: center;
+        }
+
+        &-item_pro {
             flex-direction: column;
             justify-content: center;
 
-            // display: flex;
-            // justify-content: space-evenly;
-            // text-decoration: none;
+
         }
 
-        // &-item:hover {
-        //     box-sizing: border-box;
-        //     background-color: #3a3838;
-        // }
-        &_img {
+        &_img_pro {
             display: flex;
             justify-content: center;
         }
 
-        &_header {
+        &_header_pro {
             margin: 10%;
         }
 
-        &_caption {
-            // font-size: 20px;
-            // letter-spacing: 1px;
-            // // text-decoration: none;
-            // color: #fbfbfb;
-            // font-weight: 700;
+        &_caption_pro {
+
             margin-bottom: 10px;
             text-align: center;
 
         }
 
-        &_text {
+        &_text_pro {
             max-width: none;
-            // font-size: 14px;
-            // letter-spacing: 0px;
-            // line-height: 24px;
-            // color: #fbfbfb;
-            // font-weight: 300;
-            // text-decoration: none;
+
             text-align: center;
         }
     }
 }
 
-.footer {
+.footer_pro {
     margin-top: 0;
 }
