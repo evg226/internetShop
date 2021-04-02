@@ -3,31 +3,6 @@ $color-text-products:#636363;
 $color-card-background:#f7f7f7;
 $color-like-bacjground:#e9e9e9;
 
-.bradcrumb {
-    height: 145px;
-    background: #f8f3f4;
-
-
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-    }
-
-    &__short {
-        font-size: 24px;
-        color: $color-red;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-
-    &__full {
-        color: $color-text-products;
-        font-weight: 300;
-        text-transform: uppercase;
-    }
-}
 
 .card {
     &__img {

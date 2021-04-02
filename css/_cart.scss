@@ -1,0 +1,205 @@
+.cart {
+
+    &__header {
+        height: 30px;
+        display: flex;
+        padding: 30px 0;
+        margin-top: 20px;
+
+
+        &-item {
+            font-size: 13px;
+            letter-spacing: 0px;
+            color: $color-top;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: flex;
+            // justify-content: center;
+        }
+
+
+    }
+
+    &-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 13%;
+
+        &_name {
+            flex: 0 0 35%;
+            justify-content: flex-start;
+        }
+    }
+
+    &-row {
+        display: flex;
+        height: 120px;
+        border-top: 1px solid $color-border-top;
+        padding: 20px 0;
+        box-sizing: content-box;
+
+        &:hover {
+            background: $color-top-back;
+            // filter: brightness(90%);
+        }
+
+    }
+
+    &__item {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        &_img,
+        &_img img {
+            height: 100%;
+        }
+
+        &_caption {
+            font-size: 13px;
+            color: $color-top;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        &_desc {
+
+            &_1 {
+                margin: 5px 0;
+                font-size: 13px;
+                color: $color-top;
+
+                & span {
+                    color: #575757;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &_item {
+            font-size: 13px;
+            color: #656565;
+
+
+
+        }
+
+        &_count {
+            width: 50%;
+            font-size: 13px;
+            color: #656565;
+            border: 1px solid $color-border-top;
+            text-align: right;
+            padding: 5px 10px;
+
+        }
+    }
+
+    &__button {
+        color: #4a4a4a;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 20px 40px;
+        border: 1px solid $color-border-top;
+        margin-top: 40px;
+
+        &-box {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &:hover {
+            background: $color-button-top;
+        }
+
+    }
+
+    &__checkout {
+        &-box {
+            display: flex;
+            padding-top: 63px;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            &__col {
+                flex: 0 0 30%;
+
+                &-last {
+                    background: $color-el-back;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    padding: 30px 40px;
+
+                    & button {
+                        font-size: 16px;
+                        color: #ffffff;
+                        font-weight: 700;
+                        background: $color-brand;
+                        padding: 18px 0;
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            &__header {
+                font-size: 16px;
+                color: $color-top;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+
+                & span {
+                    margin-left: 10px;
+                    color: $color-brand;
+                }
+            }
+
+
+            &__sub {
+                font-size: 11px;
+                color: #4a4a4a;
+                font-weight: 400;
+                margin-bottom: 20px;
+
+                & span {
+                    margin-left: 10px;
+                }
+            }
+
+            &-button {
+                padding: 10px;
+                display: inline-block;
+                margin: 0;
+                font-size: 11px;
+                color: #4a4a4a;
+                font-weight: 700;
+                width: 35%;
+                text-align: center;
+            }
+
+            &__form {
+                width: 100%;
+                margin-bottom: 15px;
+
+                & select,
+                input {
+                    width: 100%;
+                    background: inherit;
+                    border: 1px solid $color-border-top;
+                    padding: 10px 20px;
+                    font-size: 13px;
+                    font-weight: 300;
+
+                }
+            }
+
+
+
+        }
+    }
+}

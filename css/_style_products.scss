@@ -1,40 +1,11 @@
-$color-red: #f16d7f;
+$color-red: $color-brand;
 $color-text-products:#636363;
 
 body {
     color: $color-text-products;
 }
 
-.bradcrumb {
-    height: 145px;
-    background: #f8f3f4;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-
-    }
-
-    &__short {
-        font-size: 24px;
-        color: $color-red;
-        font-weight: 900;
-        text-transform: uppercase;
-    }
-
-    &__full {
-        color: $color-text-products;
-        font-weight: 300;
-        text-transform: uppercase;
-
-        & span {
-            color: $color-red;
-            font-weight: 500;
-        }
-    }
-}
 
 
 .products {
@@ -48,6 +19,8 @@ body {
         flex: 0 0 25%;
 
         &-nav {
+            cursor: pointer;
+
             & summary {
                 text-transform: uppercase;
                 color: $color-red;
@@ -339,6 +312,6 @@ body {
     }
 }
 
-.footer_pro {
+.footer__pro {
     margin-top: 0;
 }

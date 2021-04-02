@@ -1,12 +1,14 @@
 $color-brand: #f16d7f;
 $color-top:#222222;
-$color-top-back:#fcfcfc;
+$color-top-back:#faf9f9;
 $color-button-top: #f0f0f0;
 $color-border-top: #e6e6e6;
+$color-el-back:#f8f3f4;
+$color-red: $color-brand;
+$color-text-products:#636363;
 
 body {
     font-family: "Lato", sans-serif;
-
 }
 
 .container {
@@ -57,6 +59,7 @@ body {
         background: $color-button-top;
         border: 1px solid $color-border-top;
         position: relative;
+        cursor: pointer;
 
         & summary {
             font-size: 14px;
@@ -171,6 +174,7 @@ body {
     &__cart {
         margin-right: 10%;
         position: relative;
+        cursor: pointer;
 
         & summary {
             height: 100%;
@@ -436,7 +440,36 @@ body {
     }
 }
 
+.bradcrumb {
+    height: 145px;
+    background: #f8f3f4;
 
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+
+    }
+
+    &__short {
+        font-size: 24px;
+        color: $color-red;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    &__full {
+        color: $color-text-products;
+        font-weight: 300;
+        text-transform: uppercase;
+
+        & span {
+            color: $color-red;
+            font-weight: 500;
+        }
+    }
+}
 
 .feature {
     &__container {
@@ -649,6 +682,10 @@ body {
     &__form_group {
         margin-top: 40px;
         width: 100%;
+
+        & form {
+            display: flex;
+        }
     }
 
     &__input {
@@ -662,11 +699,7 @@ body {
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
         width: 66%;
-        box-sizing: border-box;
-        border: 1px solid #e6e6e6;
-    }
-
-    &__input:focus {
+        // border: 1px solid #222222;
         outline: none;
     }
 
@@ -677,19 +710,16 @@ body {
         letter-spacing: 0px;
         color: #ffffff;
         background: $color-brand;
-        border: none;
+        // border: 1px solid #222222;
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
         margin-left: -3px;
         width: 30%;
-        box-sizing: border-box;
-        border: 1px solid #e6e6e6;
+
+        // border: 1px solid #e6e6e6;
     }
 
-    &__button:hover {
-        background: none;
-        color: $color-top;
-    }
+
 
     &__button:focus {
         outline: none;
@@ -728,7 +758,7 @@ body {
             font-size: 18px;
             letter-spacing: 0px;
             // line-height: 26px;
-            color: #f16d7f;
+            color: $color-brand;
             font-weight: 700;
             text-transform: uppercase;
             margin: 20px 0;
