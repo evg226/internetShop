@@ -1737,6 +1737,8 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  font-size: 13px;
+  color: #656565;
 }
 .cart__item_img, .cart__item_img img {
   height: 100%;
@@ -1756,10 +1758,6 @@ body {
 .cart__item_desc_1 span {
   color: #575757;
   margin-left: 10px;
-}
-.cart__item_item {
-  font-size: 13px;
-  color: #656565;
 }
 .cart__item_count {
   width: 50%;

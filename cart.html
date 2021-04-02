@@ -448,10 +448,17 @@
                                 </select>
                             </div>
                             <div class="cart__checkout-box__form">
-                                <input type="text" name="state" placeholder="State">
+                                <input type="text" name="state" placeholder="State" list="russia">
+                                <datalist id="russia">
+                                    <option value="Москва">Москва</option>
+                                    <option value="Башкортостан">Башкорстостан</option>
+                                    <option value="Крым">Крым</option>
+                                    <option value="Краснодарский край">Краснодарский край</option>
+
+                                </datalist>
                             </div>
                             <div class="cart__checkout-box__form">
-                                <input type="telephone" name="postcode" placeholder="postcode">
+                                <input type="tel" name="postcode" placeholder="postcode" required pattern="[0-9]{6}">
                             </div>
                             <a href="#"  class="cart__button cart__checkout-box-button">
                                 Get a quote
