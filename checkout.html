@@ -300,208 +300,352 @@
             
         </nav>
 
-        <section class="cart">
-            <div class="container cart__container">
-                
-                <div class="cart__header">
-                    <div class="cart__header-item cart-col cart-col_name">Product details</div>
-                    <div class="cart__header-item cart-col">Unit price</div>
-                    <div class="cart__header-item cart-col">Quantity</div>
-                    <div class="cart__header-item cart-col">Shipping</div>
-                    <div class="cart__header-item cart-col">Subtotal</div>
-                    <div class="cart__header-item cart-col">Action</div>
-                </div>
 
-                <div class="cart-row">
-                    <a href="card.html" class="cart-col cart-col_name">
-                        <div class="cart__item_img">
-                            <img src="img/cart/cart1.png" alt="">
+        <section class="checkout">
+            <div class="container checkout__container">
+                <details open class="checkout__item">
+                    <summary class="checkout__item_header" >
+                        01. Shipping Address
+                    </summary>
+                    <div class="checkout__body">
+                        
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Check a guest or register</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" id="radio_guest"> 
+                                Checkout a guest
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" checked id="radio_register"> 
+                                Register
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Register and save time</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-text">&raquo; Fast and easy checkout</div>
+                                <div class="checkout__body-text">&raquo; Easy access to your order history and status</div>
+                            </div>
+                            <button class="checkout__body-button">Continue</button>
+
+                        </form>        
                         </div>
-                        <div class="cart__item_desc">
-                            <div class="cart__item_caption">Mango Peaple T-shirt</div>
-                            <div class="cart__item_desc_1">Color: <span>Red</span></div> 
-                            <div class="cart__item_desc_1">Size: <span>XL</span></div> 
+                    
+                    
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                            <div class="checkout__body-caption">Already registered</div>
+                            <div class="checkout__body-text">Please login below</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                E-mail address <span>*</span>
+                                <input class="checkout__body-input" type="email" name="input-email" id="input-email"> 
+                            </div>
+                            <div class="checkout__body-caption">
+                                Password<span>*</span>
+                                <input class="checkout__body-input" type="password" name="input-password" id="input-password"> 
+                            </div>
+                            <div class="checkout__body-text"> <span>* Required Fileds</span></div>
+                            <button class="checkout__body-button checkout__body-button-right">Log in</button>
+                            <a href="#" class="checkout__body-text-forgot">Forgot password?</a>
                         </div>
-                    </a>
-                    <div class="cart-col">
-                        <div class="cart__item">
-                            52$
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <input type="text" class="cart__item cart__item_count" value="5">
-                            
-                        </input>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            FREE
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            52$
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            o
-                        </div>
+                        </form>
                     </div>
                     
-                </div>
+                </details>
 
-                <div class="cart-row">
-                    <a href="card.html" class="cart-col cart-col_name">
-                        <div class="cart__item_img">
-                            <img src="img/cart/cart1.png" alt="">
+                <details class="checkout__item">
+                    <summary class="checkout__item_header" >
+                        02. Billing Information
+                    </summary>
+                    <div class="checkout__body">
+                        
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Check a guest or register</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" id="radio_guest"> 
+                                Checkout a guest
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" checked id="radio_register"> 
+                                Register
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Register and save time</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-text">&raquo; Fast and easy checkout</div>
+                                <div class="checkout__body-text">&raquo; Easy access to your order history and status</div>
+                            </div>
+                            <button class="checkout__body-button">Continue</button>
+
+                        </form>        
                         </div>
-                        <div class="cart__item_desc">
-                            <div class="cart__item_caption">Mango Peaple T-shirt</div>
-                            <div class="cart__item_desc_1">Color: <span>Red</span></div> 
-                            <div class="cart__item_desc_1">Size: <span>XL</span></div> 
-                        </div>
-                    </a>
-                    <div class="cart-col">
-                        <div class="cart__item">
-                            52$
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <input type="text" class="cart__item cart__item_count" value="5">
-                            
-                        </input>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            FREE
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            52$
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            o
-                        </div>
-                    </div>
                     
-                </div>
-
-                <div class="cart-row">
-                    <a href="card.html" class="cart-col cart-col_name">
-                        <div class="cart__item_img">
-                            <img src="img/cart/cart1.png" alt="">
-                        </div>
-                        <div class="cart__item_desc">
-                            <div class="cart__item_caption">Mango Peaple T-shirt</div>
-                            <div class="cart__item_desc_1">Color: <span>Red</span></div> 
-                            <div class="cart__item_desc_1">Size: <span>XL</span></div> 
-                        </div>
-                    </a>
-                    <div class="cart-col">
-                        <div class="cart__item">
-                            52$
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <input type="text" class="cart__item cart__item_count" value="5">
-                            
-                        </input>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            FREE
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            52$
-                        </div>
-                    </div>
-                    <div class="cart-col">
-                        <div class="cart__item cart__item_price">
-                            o
-                        </div>
-                    </div>
                     
-                </div>
-
-
-                <div class="cart__button-box">
-                    <a href="#" class="cart__button">
-                        Clear Shopping Cart
-                    </a>
-                    <a href="#"  class="cart__button">
-                        Continue shopping
-                     </a>
-                </div>
-
-                <form action="checkout.html" method="GET">
-                    <div class="cart__checkout-box">
-                        <div class="cart__checkout-box__col">
-                            <div class="cart__checkout-box__header">
-                                Shipping Address
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                            <div class="checkout__body-caption">Already registered</div>
+                            <div class="checkout__body-text">Please login below</div>
                             </div>
-                            <div class="cart__checkout-box__form">
-                                <select name="counry" id="counry">
-                                    <option value="usa">USA</option>
-                                    <option value="russia">Russia</option>
-                                    <option value="china">China</option>
-                                </select>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                E-mail address <span>*</span>
+                                <input class="checkout__body-input" type="email" name="input-email" id="input-email"> 
                             </div>
-                            <div class="cart__checkout-box__form">
-                                <input type="text" name="state" placeholder="State" list="russia">
-                                <datalist id="russia">
-                                    <option value="Москва">Москва</option>
-                                    <option value="Башкортостан">Башкорстостан</option>
-                                    <option value="Крым">Крым</option>
-                                    <option value="Краснодарский край">Краснодарский край</option>
-
-                                </datalist>
+                            <div class="checkout__body-caption">
+                                Password<span>*</span>
+                                <input class="checkout__body-input" type="password" name="input-password" id="input-password"> 
                             </div>
-                            <div class="cart__checkout-box__form">
-                                <input type="tel" name="postcode" placeholder="postcode" required pattern="[0-9]{6}">
-                            </div>
-                            <a href="#"  class="cart__button cart__checkout-box-button">
-                                Get a quote
-                            </a>
+                            <div class="checkout__body-text"> <span>* Required Fileds</span></div>
+                            <button class="checkout__body-button checkout__body-button-right">Log in</button>
+                            <a href="#" class="checkout__body-text-forgot">Forgot password?</a>
                         </div>
-
-                        <div class="cart__checkout-box__col">
-                            <div class="cart__checkout-box__header">
-                                Coupon discount
-                            </div>
-                            
-                            <div class="cart__checkout-box__form">
-                                <input type="text" name="state" placeholder="State">
-                            </div>
-                            
-                            <a href="#"  class="cart__button cart__checkout-box-button">
-                                apply coupon
-                            </a>
-                        </div>
-
-                        <div class="cart__checkout-box__col cart__checkout-box__col-last">
-                            <div class="cart__checkout-box__sub">
-                                Sub total <span>$900</span>
-                            </div>
-                            <div class="cart__checkout-box__header">
-                                Grand total <span>$900</span>
-                            </div>
-                           
-                            <button type="submit" class="cart__checkout-proceed">Prossed checkout</button>
-                        </div>
-
+                        </form>
                     </div>
-                </form>
+                </details>
+        
+                <details class="checkout__item">
+                    <summary class="checkout__item_header" >
+                        03. Shipping Informatiom
+                    </summary>
+                    <div class="checkout__body">
+                        
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Check a guest or register</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" id="radio_guest"> 
+                                Checkout a guest
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" checked id="radio_register"> 
+                                Register
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Register and save time</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-text">&raquo; Fast and easy checkout</div>
+                                <div class="checkout__body-text">&raquo; Easy access to your order history and status</div>
+                            </div>
+                            <button class="checkout__body-button">Continue</button>
+
+                        </form>        
+                        </div>
+                    
+                    
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                            <div class="checkout__body-caption">Already registered</div>
+                            <div class="checkout__body-text">Please login below</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                E-mail address <span>*</span>
+                                <input class="checkout__body-input" type="email" name="input-email" id="input-email"> 
+                            </div>
+                            <div class="checkout__body-caption">
+                                Password<span>*</span>
+                                <input class="checkout__body-input" type="password" name="input-password" id="input-password"> 
+                            </div>
+                            <div class="checkout__body-text"> <span>* Required Fileds</span></div>
+                            <button class="checkout__body-button checkout__body-button-right">Log in</button>
+                            <a href="#" class="checkout__body-text-forgot">Forgot password?</a>
+                        </div>
+                        </form>
+                    </div>
+                </details>
+        
+                <details class="checkout__item">
+                    <summary class="checkout__item_header" >
+                        04. Shipping method
+                    </summary>
+                    <div class="checkout__body">
+                        
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Check a guest or register</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" id="radio_guest"> 
+                                Checkout a guest
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" checked id="radio_register"> 
+                                Register
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Register and save time</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-text">&raquo; Fast and easy checkout</div>
+                                <div class="checkout__body-text">&raquo; Easy access to your order history and status</div>
+                            </div>
+                            <button class="checkout__body-button">Continue</button>
+
+                        </form>        
+                        </div>
+                    
+                    
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                            <div class="checkout__body-caption">Already registered</div>
+                            <div class="checkout__body-text">Please login below</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                E-mail address <span>*</span>
+                                <input class="checkout__body-input" type="email" name="input-email" id="input-email"> 
+                            </div>
+                            <div class="checkout__body-caption">
+                                Password<span>*</span>
+                                <input class="checkout__body-input" type="password" name="input-password" id="input-password"> 
+                            </div>
+                            <div class="checkout__body-text"> <span>* Required Fileds</span></div>
+                            <button class="checkout__body-button checkout__body-button-right">Log in</button>
+                            <a href="#" class="checkout__body-text-forgot">Forgot password?</a>
+                        </div>
+                        </form>
+                    </div>
+                </details>
+
+                <details class="checkout__item">
+                    <summary class="checkout__item_header" >
+                        05. Paying method
+                    </summary>
+                    <div class="checkout__body">
+                        
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Check a guest or register</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" id="radio_guest"> 
+                                Checkout a guest
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" checked id="radio_register"> 
+                                Register
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Register and save time</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-text">&raquo; Fast and easy checkout</div>
+                                <div class="checkout__body-text">&raquo; Easy access to your order history and status</div>
+                            </div>
+                            <button class="checkout__body-button">Continue</button>
+
+                        </form>        
+                        </div>
+                    
+                    
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                            <div class="checkout__body-caption">Already registered</div>
+                            <div class="checkout__body-text">Please login below</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                E-mail address <span>*</span>
+                                <input class="checkout__body-input" type="email" name="input-email" id="input-email"> 
+                            </div>
+                            <div class="checkout__body-caption">
+                                Password<span>*</span>
+                                <input class="checkout__body-input" type="password" name="input-password" id="input-password"> 
+                            </div>
+                            <div class="checkout__body-text"> <span>* Required Fileds</span></div>
+                            <button class="checkout__body-button checkout__body-button-right">Log in</button>
+                            <a href="#" class="checkout__body-text-forgot">Forgot password?</a>
+                        </div>
+                        </form>
+                    </div>
+                </details>
+        
+                <details class="checkout__item">
+                    <summary class="checkout__item_header" >
+                        06. Order review
+                    </summary>
+                    <div class="checkout__body">
+                        
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Check a guest or register</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" id="radio_guest"> 
+                                Checkout a guest
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                <input type="radio" name="type-buy" checked id="radio_register"> 
+                                Register
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-caption">Register and save time</div>
+                                <div class="checkout__body-text">Register with us for futher convinience</div>
+                            </div>
+                            <div class="checkout__body-txtblock">
+                                <div class="checkout__body-text">&raquo; Fast and easy checkout</div>
+                                <div class="checkout__body-text">&raquo; Easy access to your order history and status</div>
+                            </div>
+                            <button class="checkout__body-button">Continue</button>
+
+                        </form>        
+                        </div>
+                    
+                    
+                        <div class="checkout__body-col">
+                            <form action="#">
+                            <div class="checkout__body-txtblock">
+                            <div class="checkout__body-caption">Already registered</div>
+                            <div class="checkout__body-text">Please login below</div>
+                            </div>
+                            <div class="checkout__body-caption checkout__body-caption-input">
+                                E-mail address <span>*</span>
+                                <input class="checkout__body-input" type="email" name="input-email" id="input-email"> 
+                            </div>
+                            <div class="checkout__body-caption">
+                                Password<span>*</span>
+                                <input class="checkout__body-input" type="password" name="input-password" id="input-password"> 
+                            </div>
+                            <div class="checkout__body-text"> <span>* Required Fileds</span></div>
+                            <button class="checkout__body-button checkout__body-button-right">Log in</button>
+                            <a href="#" class="checkout__body-text-forgot">Forgot password?</a>
+                        </div>
+                        </form>
+                    </div>
+                </details>
+        
+
 
             </div>
-
-
         </section>
+
+
  
     </main>
    

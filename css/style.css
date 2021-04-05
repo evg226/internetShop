@@ -1808,6 +1808,10 @@ body {
   background: #f16d7f;
   padding: 18px 0;
   width: 100%;
+  transition: all 0.3s;
+}
+.cart__checkout-box__col-last button:hover {
+  transform: scale(1.1);
 }
 .cart__checkout-box__header {
   font-size: 16px;
@@ -1851,4 +1855,116 @@ body {
   padding: 10px 20px;
   font-size: 13px;
   font-weight: 300;
+}
+
+@-webkit-keyframes openDetails {
+  from {
+    scale: 0.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+
+@keyframes openDetails {
+  from {
+    scale: 0.1;
+  }
+  to {
+    scale: 1;
+  }
+}
+.checkout {
+  margin-top: 80px;
+}
+.checkout__item {
+  margin-top: 50px;
+}
+.checkout__item[open] .checkout__body {
+  -webkit-animation: openDetails 1s;
+          animation: openDetails 1s;
+}
+.checkout__item summary {
+  cursor: pointer;
+  list-style-type: none;
+  font-size: 16px;
+  color: #222222;
+  font-weight: 700;
+}
+.checkout__item summary::marker {
+  display: none;
+}
+.checkout__item summary::-webkit-details-marker {
+  display: none;
+}
+.checkout__item summary::-moz-details-marker {
+  display: none;
+}
+.checkout__item summary:hover {
+  transform: translateX(5px);
+}
+.checkout__body {
+  display: flex;
+  padding: 20px;
+}
+.checkout__body-col {
+  flex: 0 0 50%;
+}
+.checkout__body-txtblock {
+  margin: 25px 0;
+}
+.checkout__body-caption {
+  font-size: 13px;
+  color: #222222;
+  font-weight: 400;
+}
+.checkout__body-caption-input {
+  margin: 15px 0;
+}
+.checkout__body-caption span {
+  color: #f16d7f;
+}
+.checkout__body-text {
+  font-size: 13px;
+  color: #b3b2b2;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.checkout__body-text span {
+  color: #f16d7f;
+}
+.checkout__body-text-forgot {
+  font-size: 13px;
+  color: #b3b2b2;
+  font-weight: 400;
+}
+.checkout__body-input {
+  border: 1px solid #b3b2b2;
+  display: flex;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #b3b2b2;
+  padding: 5px;
+  width: 180px;
+  font-weight: 400;
+}
+.checkout__body-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #222222;
+  border: 1px solid #e6e6e6;
+  padding: 14px 40px;
+  margin-right: 20px;
+  width: 180px;
+  text-align: center;
+  font-weight: 400;
+  background: none;
+  transition: hover 1s ease;
+}
+.checkout__body-button:hover {
+  background: #f8f3f4;
+  transform: scale(1.1);
+}
+.checkout__body-button-right {
+  margin-top: 58px;
 }/*# sourceMappingURL=style.css.map */
