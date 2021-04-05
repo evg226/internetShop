@@ -29,6 +29,11 @@
         &_name {
             flex: 0 0 35%;
             justify-content: flex-start;
+            padding-left: 2px;
+
+            &:hover {
+                box-shadow: 0 0 5px $color-border-top;
+            }
         }
     }
 

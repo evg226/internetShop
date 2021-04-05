@@ -459,17 +459,25 @@ body {
         text-transform: uppercase;
     }
 
-    &__full {
+    &__link,
+    &__devider {
         color: $color-text-products;
         font-weight: 300;
         text-transform: uppercase;
+        display: inline-block;
+        margin-left: -4px;
 
-        & span {
+        &-active {
             color: $color-red;
             font-weight: 500;
         }
     }
+
+    &__link:hover {
+        color: $color-red;
+    }
 }
+
 
 .feature {
     &__container {
@@ -531,17 +539,18 @@ body {
         }
 
         &-item:hover {
-            filter: contrast(20);
+            // filter: contrast(20);
+            transform: scale(1.05);
         }
 
-        &-item:hover &_caption {
-            font-weight: 900;
-        }
+        // &-item:hover &_caption {
+        //     font-weight: 900;
+        // }
 
-        &-item:hover &_text {
-            font-weight: 400;
+        // &-item:hover &_text {
+        //     font-weight: 400;
 
-        }
+        // }
 
         &_caption {
             font-size: 20px;
@@ -767,7 +776,7 @@ body {
         &_item {
             font-size: 16px;
             letter-spacing: 0px;
-            line-height: 48px;
+            line-height: 40px;
             color: #898989;
             font-weight: 400;
             text-decoration: none;
