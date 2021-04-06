@@ -6,9 +6,39 @@ $color-border-top: #e6e6e6;
 $color-el-back:#f8f3f4;
 $color-red: $color-brand;
 $color-text-products:#636363;
+$color-box-shadow: #d8d8d8;
+$color-line: #ebebeb;
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Black.ttf);
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Light.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
 
 body {
-    font-family: "Lato", sans-serif;
+    font-family: Lato, sans-serif;
 }
 
 .container {
@@ -17,6 +47,11 @@ body {
     min-width: 320px;
 
 }
+
+.button {
+    height: 40px;
+}
+
 
 .header {
 
@@ -40,6 +75,7 @@ body {
         text-transform: uppercase;
         padding: 10px 15px 10px 7px;
 
+
         &-link {
             display: flex;
         }
@@ -48,6 +84,8 @@ body {
             color: $color-brand;
             font-weight: 500;
         }
+
+
     }
 
     &__search-group {
@@ -98,6 +136,8 @@ body {
             padding: 0 20px 10px;
             border-bottom-right-radius: 5px;
             border-bottom-left-radius: 5px;
+            border: 1px solid $color-border-top;
+
         }
 
         &_nav:before {
@@ -176,10 +216,16 @@ body {
         position: relative;
         cursor: pointer;
 
+
+
         & summary {
             height: 100%;
             width: 100%;
             list-style-type: none;
+
+            &:hover {
+                transform: scale(1.05);
+            }
 
             &::marker {
                 display: none;
@@ -199,13 +245,28 @@ body {
             right: -30px;
             top: 41px;
             position: absolute;
-            z-index: 10;
+            z-index: 100;
             white-space: nowrap;
             display: flex;
             flex-direction: column;
             padding: 0 20px 10px;
-            border-bottom-right-radius: 5px;
-            border-bottom-left-radius: 5px;
+            border-radius: 5px;
+            border: 1px solid $color-border-top;
+
+            &:before {
+                content: '';
+                display: block;
+                width: 12px;
+                height: 12px;
+                top: -7px;
+                right: 40px;
+                background: $color-top-back;
+                position: absolute;
+                transform: rotate(45deg);
+                border-top: 1px solid $color-border-top;
+                border-left: 1px solid $color-border-top;
+
+            }
         }
 
         &_link {
@@ -311,7 +372,7 @@ body {
         font-size: 14px;
         display: flex;
         color: $color-top;
-        font-weight: 900;
+        font-weight: 700;
 
 
     }
@@ -319,8 +380,6 @@ body {
     &__link:hover {
         background: $color-button-top;
     }
-
-
 
     &__subnav {
         position: absolute;
@@ -335,8 +394,9 @@ body {
         width: 500px;
         background: $color-top-back;
         padding: 10px 0;
-        border-top: 1px solid $color-border-top;
+        // border-top: 1px solid $color-border-top;
         border-bottom-right-radius: 5px;
+        border: 1px solid $color-border-top;
         border-bottom-left-radius: 5px;
     }
 
@@ -405,9 +465,9 @@ body {
 
 
     &__sublink {
-        font-size: 14px;
+        font-size: 13px;
         color: $color-top;
-        font-weight: 500;
+        font-weight: 400;
         padding: 9px 20px;
         margin: 0 5px;
         display: flex;
@@ -421,7 +481,7 @@ body {
         bottom: 20%;
         right: 15%;
         width: 30%;
-        color: $color-top;
+        color: #ffffff;
         font-size: 20px;
         font-weight: 900;
         white-space: pre-line;
@@ -441,8 +501,9 @@ body {
 }
 
 .bradcrumb {
-    height: 145px;
-    background: #f8f3f4;
+    height: 100px;
+    background: $color-el-back;
+    ;
 
     &__container {
         display: flex;
@@ -465,7 +526,7 @@ body {
         font-weight: 300;
         text-transform: uppercase;
         display: inline-block;
-        margin-left: -4px;
+        margin-left: -1px;
 
         &-active {
             color: $color-red;
@@ -475,6 +536,7 @@ body {
 
     &__link:hover {
         color: $color-red;
+        transform: scale(1.07);
     }
 }
 

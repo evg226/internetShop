@@ -417,14 +417,42 @@ h6 {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Black.ttf);
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Lato";
+  src: url(../fonts/Lato-Light.ttf);
+  font-style: normal;
+  font-weight: 300;
+}
 body {
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 .container {
   max-width: 1140px;
   margin: 0 auto;
   min-width: 320px;
+}
+
+.button {
+  height: 40px;
 }
 
 .header__top {
@@ -495,6 +523,7 @@ body {
   padding: 0 20px 10px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+  border: 1px solid #e6e6e6;
 }
 .header__browse_nav:before {
   content: "";
@@ -564,6 +593,9 @@ body {
   width: 100%;
   list-style-type: none;
 }
+.header__cart summary:hover {
+  transform: scale(1.05);
+}
 .header__cart summary::marker {
   display: none;
 }
@@ -578,13 +610,26 @@ body {
   right: -30px;
   top: 41px;
   position: absolute;
-  z-index: 10;
+  z-index: 100;
   white-space: nowrap;
   display: flex;
   flex-direction: column;
   padding: 0 20px 10px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+}
+.header__cart[open] .header__cart_nav:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  top: -7px;
+  right: 40px;
+  background: #faf9f9;
+  position: absolute;
+  transform: rotate(45deg);
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
 }
 .header__cart_link {
   text-decoration: none;
@@ -670,7 +715,7 @@ body {
   font-size: 14px;
   display: flex;
   color: #222222;
-  font-weight: 900;
+  font-weight: 700;
 }
 .header__link:hover {
   background: #f0f0f0;
@@ -687,8 +732,8 @@ body {
   width: 500px;
   background: #faf9f9;
   padding: 10px 0;
-  border-top: 1px solid #e6e6e6;
   border-bottom-right-radius: 5px;
+  border: 1px solid #e6e6e6;
   border-bottom-left-radius: 5px;
 }
 .header__subnav:before {
@@ -741,9 +786,9 @@ body {
   right: 150px;
 }
 .header__sublink {
-  font-size: 14px;
+  font-size: 13px;
   color: #222222;
-  font-weight: 500;
+  font-weight: 400;
   padding: 9px 20px;
   margin: 0 5px;
   display: flex;
@@ -756,7 +801,7 @@ body {
   bottom: 20%;
   right: 15%;
   width: 30%;
-  color: #222222;
+  color: #ffffff;
   font-size: 20px;
   font-weight: 900;
   white-space: pre-line;
@@ -772,7 +817,7 @@ body {
 }
 
 .bradcrumb {
-  height: 145px;
+  height: 100px;
   background: #f8f3f4;
 }
 .bradcrumb__container {
@@ -792,7 +837,7 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   display: inline-block;
-  margin-left: -4px;
+  margin-left: -1px;
 }
 .bradcrumb__link-active, .bradcrumb__devider-active {
   color: #f16d7f;
@@ -800,6 +845,7 @@ body {
 }
 .bradcrumb__link:hover {
   color: #f16d7f;
+  transform: scale(1.07);
 }
 
 .feature__container {
@@ -1250,9 +1296,6 @@ body {
 .products__sidebar {
   flex: 0 0 25%;
 }
-.products__sidebar-nav {
-  cursor: pointer;
-}
 .products__sidebar-nav summary {
   text-transform: uppercase;
   color: #f16d7f;
@@ -1262,6 +1305,8 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
+  list-style-type: none;
 }
 .products__sidebar-nav summary::marker {
   display: none;
@@ -1283,6 +1328,9 @@ body {
   content: "▼";
   justify-self: end;
   margin-left: auto;
+}
+.products__sidebar-nav[open] > summary:after {
+  content: "▲";
 }
 .products__sidebar-nav:focus {
   outline: none;
@@ -1359,7 +1407,7 @@ body {
   width: 100%;
 }
 .products__view {
-  background: #f3f3f3;
+  background: #f8f3f4;
   width: 100%;
   height: 50px;
   display: flex;
@@ -1382,10 +1430,11 @@ body {
 .products__view select {
   display: inline-block;
   background: #ffffff;
-  border-left: 1px solid #f3f3f3;
+  border-left: 1px solid #d8d8d8;
   padding: 3px 10px;
   min-width: 30%;
   color: inherit;
+  cursor: pointer;
 }
 .products__pages {
   display: flex;
@@ -1684,9 +1733,11 @@ body {
 }
 .products__card-cart-link2::before {
   content: url(../img/product/cart2.svg);
+  margin-left: 5px;
 }
 .products__card-cart-link3::before {
   content: url(../img/product/cart3.svg);
+  margin-left: 5px;
 }
 .products__card:hover {
   box-shadow: 0 0 5px #d8d8d8;

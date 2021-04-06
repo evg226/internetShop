@@ -1,6 +1,3 @@
-$color-red: $color-brand;
-$color-text-products:#636363;
-
 body {
     color: $color-text-products;
 }
@@ -19,17 +16,19 @@ body {
         flex: 0 0 25%;
 
         &-nav {
-            cursor: pointer;
+
 
             & summary {
                 text-transform: uppercase;
                 color: $color-red;
                 font-weight: 700;
-                border-bottom: 1px solid #ebebeb;
+                border-bottom: 1px solid $color-line;
                 margin: 10px 0;
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+                cursor: pointer;
+                list-style-type: none;
 
                 &::marker {
                     display: none;
@@ -42,7 +41,6 @@ body {
                 &::-webkit-details-marker {
                     display: none;
                 }
-
 
                 &:before {
                     content: '';
@@ -57,6 +55,10 @@ body {
                     justify-self: end;
                     margin-left: auto;
                 }
+            }
+
+            &[open]>summary:after {
+                content: '\25B2';
 
             }
 
@@ -106,7 +108,6 @@ body {
             &_left {
                 flex: 0 0 25%;
                 max-width: 25%;
-
             }
         }
 
@@ -168,7 +169,7 @@ body {
     }
 
     &__view {
-        background: #f3f3f3;
+        background: $color-el-back;
         width: 100%;
         height: 50px;
         display: flex;
@@ -178,9 +179,10 @@ body {
         &_group {
             display: flex;
             align-items: center;
-            border: 1px solid #d8d8d8;
+            border: 1px solid $color-box-shadow;
             width: 200px;
             margin-left: 20px;
+
         }
 
         &__sort {
@@ -196,20 +198,14 @@ body {
         & select {
             display: inline-block;
             background: #ffffff;
-            border-left: 1px solid #f3f3f3;
+            border-left: 1px solid $color-box-shadow;
             // box-sizing: border-box;
             padding: 3px 10px;
             min-width: 30%;
             color: inherit;
-
-
-
-
+            cursor: pointer;
         }
     }
-
-
-
 
 
     &__pages {
@@ -221,8 +217,6 @@ body {
             display: flex;
             border: 1px solid #ebebeb;
             align-items: center;
-
-
         }
 
         &__link {

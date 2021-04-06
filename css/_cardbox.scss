@@ -22,7 +22,7 @@ $color-price:$color-brand;
     &-img {
         display: flex;
         justify-content: center;
-        background: #f8f3f4;
+        background: $color-el-back;
         height: 280px;
 
         & img {
@@ -91,17 +91,18 @@ $color-price:$color-brand;
 
             &2::before {
                 content: url(../img/product/cart2.svg);
-
+                margin-left: 5px;
             }
 
             &3::before {
                 content: url(../img/product/cart3.svg);
+                margin-left: 5px;
             }
         }
     }
 
     &:hover {
-        box-shadow: 0 0 5px #d8d8d8;
+        box-shadow: 0 0 5px $color-box-shadow;
 
         & .products__card-cart {
             display: flex;
