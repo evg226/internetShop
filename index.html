@@ -11,54 +11,58 @@
     <!-- <link rel="stylesheet" href="css/reset.css"> -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Интернет-магазин</title>
+    <title>Internet Shop</title>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="navbar__icons container">
-            <div class="navbar__icons__left">
-                <a href="#" class="item_home item_navbar">
+<header>
+
+    <nav class="navbar">
+        <div class="navbar__container container">
+            <div class="navbar__side">
+                <a href="#" class="navbar__item item_home ">
                     <img src="img/menu1.svg" alt="Home icon">
                 </a>
-                <a href="#" class="item_search item_navbar">
+                <a href="#" class="navbar__item item_search">
                     <img src="img/menu-search.svg" alt="Search icon">
                 </a>
-
             </div>
-            <div class="navbar__icons__right">
-                <a href="#" class="item__mob__disapp item_hamburger item_navbar">
-                    <img src="img/menu_hamb.svg" alt="Submenu icon">
-                </a>
-                <a href="#" class="item__mob__disapp item_login item_navbar">
-                    <img src="img/user.svg" alt="Login icon">
-                </a>
-                <a href="#" class="item__cart item_navbar">
-                    <img src="img/cart.svg" alt="Submenu icon">
-                    <div class="item__cart__count">
-                        5
-                    </div>
-                </a>
+            <div class="navbar__side navbar__side-right">
+                    <a href="#" class="navbar__item item_hamburger">
+                        <img src="img/menu_hamb.svg" alt="Submenu icon">
+                    </a>
+                    <a href="#" class="navbar__item item_login">
+                        <img src="img/user.svg" alt="Login icon">
+                    </a>
+                    <a href="#" class="navbar__item item__cart">
+                        <img src="img/cart.svg" alt="Submenu icon">
+                        <div class="item__cart__count">
+                            2
+                        </div>
+                    </a>
             </div>
         </div>
-    </div>
+    </nav>
 
     <div class="banner">
         <div class="banner__container container">
-            <div class="banner_img">
+            <div class="banner__img">
                 <img src="img/man.png" alt="banner image">
             </div>
-            <div class="heading">
-                <p class="heading__big">The Brand</p>
-                <p class="heading__little">
-                    of Luxerious <span class="heading__call">fashion</span>
+            <div class="banner__heading">
+                <p class="banner__heading__big">The Brand</p>
+                <p class="banner__heading__little">
+                    of Luxerious <span class="banner__heading__call">fashion</span>
                 </p>
             </div>
 
         </div>
     </div>
+    
+</header>
 
-    <div class="main__offer container">
+<main>
+    <section class="main__offer container">
         <div class="main__offer__top">
             <a href="#" class="main__offer__item">
 
@@ -106,7 +110,7 @@
             </a>
         </div>
 
-        <a href="#" class="main__offer__bottom main__offer__item">
+        <a href="#" class="main__offer__item main__offer__bottom">
             <!-- <div class="main__offer__bottom main__offer__item"> -->
             <div class="main__offer__item__text">
                 <p class="main__offer__item__text_top">
@@ -119,11 +123,11 @@
             <img src="img/accessories.png" alt="for_kids">
             <!-- </div> -->
         </a>
-    </div>
+    </section>
 
    
 
-<div class="featured">
+<section class="featured">
     <div class="featured__container container">
 
 
@@ -139,13 +143,7 @@
         <div class="featured__box">
             
             <div class="featured__item">
-                <a href="products.html" class="featured__item_add-link">
-                    Add to Cart
-                </a>
-                <a href="#" class="featured__item_back">    
-                    <div class="featured__item-back">
-                   
-                    </div>      
+                <a href="#" class="featured__item-link">    
                     <div class="featured__item-img">
                         <img src="img/feature1.png" alt="">
                     </div>
@@ -162,16 +160,15 @@
                         </div>
                     </div>
                 </a>    
-            </div>
-            
-            <div class="featured__item">
+                <div class="featured__item_add">
                 <a href="products.html" class="featured__item_add-link">
                     Add to Cart
                 </a>
-                <a href="#" class="featured__item_back">    
-                    <div class="featured__item-back">
-                   
-                    </div>      
+                </div>
+            </div>
+            
+            <div class="featured__item">
+                <a href="#" class="featured__item-link">    
                     <div class="featured__item-img">
                         <img src="img/feature2.png" alt="">
                     </div>
@@ -188,16 +185,15 @@
                         </div>
                     </div>
                 </a>    
-            </div>
-
-            <div class="featured__item">
+                <div class="featured__item_add">
                 <a href="products.html" class="featured__item_add-link">
                     Add to Cart
                 </a>
-                <a href="#" class="featured__item_back">    
-                    <div class="featured__item-back">
-                   
-                    </div>      
+                </div>
+            </div>
+
+            <div class="featured__item">
+                <a href="#" class="featured__item-link">    
                     <div class="featured__item-img">
                         <img src="img/feature3.png" alt="">
                     </div>
@@ -214,16 +210,15 @@
                         </div>
                     </div>
                 </a>    
-            </div>
-
-            <div class="featured__item">
+                <div class="featured__item_add">
                 <a href="products.html" class="featured__item_add-link">
                     Add to Cart
                 </a>
-                <a href="#" class="featured__item_back">    
-                    <div class="featured__item-back">
-                   
-                    </div>      
+                </div>
+            </div>
+
+            <div class="featured__item">
+                <a href="#" class="featured__item-link">    
                     <div class="featured__item-img">
                         <img src="img/feature4.png" alt="">
                     </div>
@@ -240,16 +235,15 @@
                         </div>
                     </div>
                 </a>    
-            </div>
-
-            <div class="featured__item">
+                <div class="featured__item_add">
                 <a href="products.html" class="featured__item_add-link">
                     Add to Cart
                 </a>
-                <a href="#" class="featured__item_back">    
-                    <div class="featured__item-back">
-                   
-                    </div>      
+                </div>
+            </div>
+
+            <div class="featured__item">
+                <a href="#" class="featured__item-link">    
                     <div class="featured__item-img">
                         <img src="img/feature5.png" alt="">
                     </div>
@@ -266,16 +260,15 @@
                         </div>
                     </div>
                 </a>    
-            </div>
-
-            <div class="featured__item">
+                <div class="featured__item_add">
                 <a href="products.html" class="featured__item_add-link">
                     Add to Cart
                 </a>
-                <a href="#" class="featured__item_back">    
-                    <div class="featured__item-back">
-                   
-                    </div>      
+                </div>
+            </div>
+
+            <div class="featured__item">
+                <a href="#" class="featured__item-link">    
                     <div class="featured__item-img">
                         <img src="img/feature6.png" alt="">
                     </div>
@@ -292,6 +285,11 @@
                         </div>
                     </div>
                 </a>    
+                <div class="featured__item_add">
+                <a href="products.html" class="featured__item_add-link">
+                    Add to Cart
+                </a>
+                </div>
             </div>
 
 
@@ -302,14 +300,14 @@
         </a>
     </div>
 
-</div>
+</section>
 
 
 
     <div class="delivery">
         <div class="delivery__box container">
 
-            <div class="delivery__card">
+            <a href="#" class="delivery__card">
                 <div class="delivery__img">
                     <img src="img/delivery.svg" alt="">
                 </div>
@@ -319,9 +317,9 @@
                 <div class="delivery__text">
                     Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                 </div>
-            </div>
+            </a>
 
-            <div class="delivery__card">
+            <a href="#" class="delivery__card">
                 <div class="delivery__img">
                     <img src="img/persent.svg" alt="">
                 </div>
@@ -331,9 +329,9 @@
                 <div class="delivery__text">
                     Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                 </div>
-            </div>
+            </a>
 
-            <div class="delivery__card">
+            <a href="#" class="delivery__card">
                 <div class="delivery__img">
                     <img src="img/crown.svg" alt="">
                 </div>
@@ -343,40 +341,41 @@
                 <div class="delivery__text">
                     Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.
                 </div>
-            </div>
+            </a>
 
 
 
 
         </div>
     </div>
+</main>
 
-    <div class="footer">
-        <div class="subcribe">
-            <div class="subscribe_container container">
-                <div class="subcribe__card">
+
+<footer class="footer">
+        <div class="subscribe">
+            <div class="container subscribe__container">
+                <figure class="subscribe__card">
+                    <div>
                     <img src="img/Intersect.png" alt="">
-                    <div class="subcribe__left__text">
-                        “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
                     </div>
-                </div>
+                    <figcaption class="subscribe__left__text">
+                        “Vefigurebulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                    </figcaption>
+                </figure>
 
-                <div class="subcribe__card">
-                    <div class="subcribe__right__heading">
+                <div class="subscribe__card">
+                    <div class="subscribe__right__heading">
                         subscribe
                     </div>
-                    <div class="subcribe__right__text">
+                    <div class="subscribe__right__text">
                         FOR OUR NEWLETTER AND PROMOTION
                     </div>
-
-
-
-                    <div class="subcribe__form">
-                        <form action="#" method="get">
+                    <form class="subscribe__form" action="#" method="get">
+                    
                             <input class="email" type="email" name="email" placeholder="email@server.com">
                             <input class="button" type="submit" value="Subscribe">
-                        </form>
-                    </div>
+                    
+                </form>
 
 
 
@@ -406,7 +405,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 
 
 </body>
