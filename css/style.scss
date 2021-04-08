@@ -23,6 +23,7 @@ body {
 .container {
     max-width: $width__container__desktop;
     margin: 0 auto;
+    min-width: 320px;
 }
 
 .navbar {
@@ -529,10 +530,11 @@ body {
 
 @media(max-width:768px) {
     .featured__item {
-        flex: 1 0 45%;
+        flex: 1 1 45%;
     }
 
     .banner {
+
         &__heading {
             &__big {
                 font-size: 32px;
@@ -542,6 +544,7 @@ body {
                 font-size: 24px;
             }
         }
+
     }
 
     .delivery {
@@ -577,6 +580,134 @@ body {
         flex: 1 1 100%;
         max-width: 100%;
     }
+
+
+}
+
+@media (max-width:550px) {
+    .banner__img {
+        display: none;
+    }
+
+    .banner__container {
+        height: 368px;
+    }
+
+
+}
+
+@media (max-width:500px) {
+    .main__offer__top {
+        flex-direction: column;
+    }
+
+    .main__offer__bottom {
+        padding: 0.5%;
+    }
+
+    .main__offer__bottom img {
+        height: 200px;
+        // width: auto;
+        object-fit: cover;
+    }
+
+    .copyright__container {
+        flex-direction: column-reverse;
+    }
+
+    .copyright_left,
+    .social {
+        padding: 2% 0;
+    }
+
+    .featured__item {
+        // flex: 1 1 70%;
+
+        &-header {
+            text-align: left;
+            margin: 5% 3%;
+
+        }
+
+        &-heading {
+            font-size: 14px;
+            line-height: 13px;
+
+        }
+
+        &-desc {
+
+            font-size: 12px;
+            line-height: 16px;
+
+            margin: 6px 0 9px;
+
+        }
+
+        &-price {
+            font-size: 14px;
+
+        }
+
+    }
+}
+
+@media (max-width:400px) {
+    .featured__item {
+        flex: 1 1 90%;
+
+
+    }
+
+    .subscribe {
+
+        &__left__text {
+            // margin-top: 5%;
+            font-size: 13px;
+            line-height: 16px;
+        }
+
+        &__right__heading {
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+
+        &__right__text {
+
+            font-size: 13px;
+            line-height: 18px;
+        }
+
+        &__form {
+            font-size: 12px;
+        }
+    }
+
+    .delivery {
+        &__cap {
+            font-size: 17px;
+            line-height: 18px;
+        }
+
+        &__text {
+
+            font-size: 13px;
+            line-height: 18px;
+        }
+    }
+}
+
+@media (max-width:375px) {
+
+    .item_login,
+    .item__cart {
+        display: none;
+    }
+
+    .navbar__container {
+        padding-right: 1%;
+    }
+
 
 
 }
