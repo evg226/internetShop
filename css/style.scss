@@ -134,9 +134,10 @@ body {
 }
 
 .main__offer {
-    margin-top: 10%;
+
 
     &__top {
+        margin-top: 8%;
         display: flex;
         justify-content: space-between;
     }
@@ -203,10 +204,11 @@ body {
 .featured {
     // &__header {
     text-align: center;
-    margin-top: 8%;
+    // margin-top: 8%;
     // }
 
     &__heading {
+        margin-top: 7%;
         color: $color__main;
         font-size: 30px;
         line-height: 36px;
@@ -216,10 +218,10 @@ body {
         font-size: 14px;
         line-height: 17px;
         color: #9F9F9F;
+        margin-bottom: 4%;
     }
 
     &__box {
-        margin-top: 5%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -328,15 +330,14 @@ body {
 
     &__button {
         display: inline-block;
-        margin-top: 5%;
         text-decoration: none;
         color: $color__font__call;
         font-size: 16px;
         line-height: 19px;
         border: 1px solid $color__font__call;
         padding: 14px 38px;
-
-
+        margin-top: 4%;
+        margin-bottom: 8%;
     }
 
     &__button:hover {
@@ -347,7 +348,7 @@ body {
 }
 
 .delivery {
-    margin-top: 10%;
+
     background: $color__main;
     // height: 340px;
 
@@ -356,7 +357,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 6% 2%; // height: 100%;
+        padding: 4% 2%; // height: 100%;
     }
 
     &__card {
@@ -391,7 +392,7 @@ body {
     background-size: cover;
 
     &__container {
-        padding: 3% 1%;
+        padding: 2% 1%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -402,7 +403,7 @@ body {
         flex: 0 0 50%;
         text-align: center;
         color: #222224;
-        padding: 4% 1%;
+        padding: 3% 1%;
     }
 
     &__left__text {

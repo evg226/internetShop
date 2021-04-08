@@ -100,10 +100,8 @@ body {
   color: #F16D7F;
 }
 
-.main__offer {
-  margin-top: 10%;
-}
 .main__offer__top {
+  margin-top: 8%;
   display: flex;
   justify-content: space-between;
 }
@@ -154,9 +152,9 @@ body {
 
 .featured {
   text-align: center;
-  margin-top: 8%;
 }
 .featured__heading {
+  margin-top: 7%;
   color: #222222;
   font-size: 30px;
   line-height: 36px;
@@ -165,9 +163,9 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #9F9F9F;
+  margin-bottom: 4%;
 }
 .featured__box {
-  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -246,13 +244,14 @@ body {
 }
 .featured__button {
   display: inline-block;
-  margin-top: 5%;
   text-decoration: none;
   color: #F16D7F;
   font-size: 16px;
   line-height: 19px;
   border: 1px solid #F16D7F;
   padding: 14px 38px;
+  margin-top: 4%;
+  margin-bottom: 8%;
 }
 .featured__button:hover {
   color: #FFFFFF;
@@ -260,14 +259,13 @@ body {
 }
 
 .delivery {
-  margin-top: 10%;
   background: #222222;
 }
 .delivery__box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6% 2%;
+  padding: 4% 2%;
 }
 .delivery__card {
   flex: 0 1 28%;
@@ -296,7 +294,7 @@ body {
   background-size: cover;
 }
 .subscribe__container {
-  padding: 3% 1%;
+  padding: 2% 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -305,7 +303,7 @@ body {
   flex: 0 0 50%;
   text-align: center;
   color: #222224;
-  padding: 4% 1%;
+  padding: 3% 1%;
 }
 .subscribe__left__text {
   margin-top: 5%;
