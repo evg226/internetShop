@@ -6,6 +6,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  font-size: 16px;
 }
 
 .container {
@@ -76,6 +77,7 @@ body {
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  margin-left: 7%;
 }
 .banner__heading::before {
   content: "";
@@ -83,7 +85,7 @@ body {
   height: 100%;
   background: #F16D7F;
   position: absolute;
-  left: -28px;
+  left: -7%;
 }
 .banner__heading__big {
   font-weight: 900;
@@ -99,7 +101,7 @@ body {
 }
 
 .main__offer {
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .main__offer__top {
   display: flex;
@@ -152,7 +154,7 @@ body {
 
 .featured {
   text-align: center;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 .featured__heading {
   color: #222222;
@@ -165,7 +167,7 @@ body {
   color: #9F9F9F;
 }
 .featured__box {
-  margin-top: 18px;
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -244,7 +246,7 @@ body {
 }
 .featured__button {
   display: inline-block;
-  margin-top: 3%;
+  margin-top: 5%;
   text-decoration: none;
   color: #F16D7F;
   font-size: 16px;
@@ -258,14 +260,14 @@ body {
 }
 
 .delivery {
-  margin-top: 5%;
+  margin-top: 10%;
   background: #222222;
 }
 .delivery__box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2%;
+  padding: 6% 2%;
 }
 .delivery__card {
   flex: 0 1 28%;
@@ -273,7 +275,6 @@ body {
   display: inline-block;
   text-decoration: none;
   color: #FBFBFB;
-  margin: 5% 0;
 }
 .delivery__card:hover {
   transform: scale(1.1);
@@ -295,22 +296,23 @@ body {
   background-size: cover;
 }
 .subscribe__container {
-  padding: 8% 1%;
+  padding: 3% 1%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .subscribe__card {
-  flex: 0 0 45%;
+  flex: 0 0 50%;
   text-align: center;
   color: #222224;
+  padding: 4% 1%;
 }
 .subscribe__left__text {
   margin-top: 5%;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  max-width: 75%;
+  max-width: 300px;
   display: inline-block;
 }
 .subscribe__right__heading {
@@ -324,7 +326,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 .subscribe__form {
   font-size: 14px;
@@ -399,6 +401,36 @@ body {
 
 @media (max-width: 768px) {
   .featured__item {
-    flex: 1 45%;
+    flex: 1 0 45%;
+  }
+
+  .banner__heading__big {
+    font-size: 32px;
+  }
+  .banner__heading__little {
+    font-size: 24px;
+  }
+
+  .delivery__box {
+    flex-direction: column;
+  }
+  .delivery__card {
+    padding: 3%;
+  }
+  .delivery__cap {
+    margin-top: 4%;
+    margin-bottom: 2%;
+  }
+  .delivery__text {
+    max-width: 300px;
+  }
+
+  .subscribe__container {
+    flex-direction: column;
+  }
+
+  .email {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

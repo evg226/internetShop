@@ -16,6 +16,7 @@ $height__banner__desktop:764px;
 
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -101,6 +102,7 @@ body {
         text-transform: uppercase;
         position: relative;
         display: inline-block;
+        margin-left: 7%;
         // flex: 0 0 45%;
 
         &::before {
@@ -109,7 +111,7 @@ body {
             height: 100%;
             background: $color__font__call;
             position: absolute;
-            left: -28px;
+            left: -7%;
         }
 
         &__big {
@@ -132,7 +134,7 @@ body {
 }
 
 .main__offer {
-    margin-top: 5%;
+    margin-top: 10%;
 
     &__top {
         display: flex;
@@ -201,7 +203,7 @@ body {
 .featured {
     // &__header {
     text-align: center;
-    margin-top: 5%;
+    margin-top: 8%;
     // }
 
     &__heading {
@@ -217,7 +219,7 @@ body {
     }
 
     &__box {
-        margin-top: 18px;
+        margin-top: 5%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -326,7 +328,7 @@ body {
 
     &__button {
         display: inline-block;
-        margin-top: 3%;
+        margin-top: 5%;
         text-decoration: none;
         color: $color__font__call;
         font-size: 16px;
@@ -345,7 +347,7 @@ body {
 }
 
 .delivery {
-    margin-top: 5%;
+    margin-top: 10%;
     background: $color__main;
     // height: 340px;
 
@@ -354,7 +356,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 2%; // height: 100%;
+        padding: 6% 2%; // height: 100%;
     }
 
     &__card {
@@ -363,7 +365,6 @@ body {
         display: inline-block;
         text-decoration: none;
         color: #FBFBFB;
-        margin: 5% 0;
 
         &:hover {
             transform: scale(1.1);
@@ -390,7 +391,7 @@ body {
     background-size: cover;
 
     &__container {
-        padding: 8% 1%;
+        padding: 3% 1%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -398,10 +399,10 @@ body {
     }
 
     &__card {
-        flex: 0 0 45%;
+        flex: 0 0 50%;
         text-align: center;
         color: #222224;
-
+        padding: 4% 1%;
     }
 
     &__left__text {
@@ -409,7 +410,7 @@ body {
         font-size: 16px;
         line-height: 20px;
         text-align: center;
-        max-width: 75%;
+        max-width: 300px;
         display: inline-block;
 
     }
@@ -426,7 +427,7 @@ body {
         font-size: 18px;
         line-height: 30px;
         text-transform: uppercase;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
 
@@ -527,6 +528,54 @@ body {
 
 @media(max-width:768px) {
     .featured__item {
-        flex: 1 45%;
+        flex: 1 0 45%;
     }
+
+    .banner {
+        &__heading {
+            &__big {
+                font-size: 32px;
+            }
+
+            &__little {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .delivery {
+
+        &__box {
+            flex-direction: column;
+        }
+
+        &__card {
+            // max-width: 50%;
+            padding: 3%;
+        }
+
+        &__cap {
+            margin-top: 4%;
+            margin-bottom: 2%;
+        }
+
+        &__text {
+            max-width: 300px;
+        }
+    }
+
+    .subscribe {
+
+        &__container {
+            flex-direction: column;
+        }
+    }
+
+    .email {
+
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+
 }
