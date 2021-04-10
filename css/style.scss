@@ -2,17 +2,19 @@ $color__main:#222222;
 $color__banner: #F1E4E6;
 $color__font__main:#FFFFFF;
 $color__font__call:#F16D7F;
+$color__menu:#6F6E6E;
 $width__container__desktop:1140px;
 $height__navbar:75px;
 $height__banner__desktop:764px;
 
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0 none;
-}
+// * {
+//     margin: 0;
+//     padding: 0;
+//     border: 0 none;
+// }
 
+@import "my_reset";
 
 body {
     font-family: 'Lato', sans-serif;
@@ -28,7 +30,7 @@ body {
 
 .navbar {
     background: $color__main;
-
+  
     &__container {
         display: flex;
         justify-content: space-between;
@@ -57,6 +59,51 @@ body {
     }
 
 }
+
+
+.item-hamburger{
+    position: relative;
+   
+}
+
+.subnav{
+    position: absolute;
+    top:$height__navbar;
+    right: 0;
+    background: #FFFFFF;
+    z-index: 10;
+    padding: 16px 0;
+    display:flex;
+    flex-direction: column;
+
+    &__link{
+        display: block;
+        color: $color__menu;
+        padding:5px 55px;
+        font-size: 14px;
+        &-gr{
+            margin-top: 10px;
+            padding-left: 33px;
+            text-transform: uppercase;
+            color: $color__font__call;
+        }
+        &-menu{
+            color: #000000;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-top: 0;
+
+        }
+        &-close{
+            text-align: right;
+            padding: 0 33px;
+        }
+        &:hover{
+            color:$color__font__call;
+        }
+    }
+}
+
 
 .item__cart {
     position: relative;
