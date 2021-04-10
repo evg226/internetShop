@@ -620,39 +620,39 @@ body {
         padding: 2% 0;
     }
 
-    .featured__item {
-        // flex: 1 1 70%;
+    // .featured__item {
+    //     // flex: 1 1 70%;
 
-        &-header {
-            text-align: left;
-            margin: 5% 3%;
+    //     &-header {
+    //         text-align: left;
+    //         margin: 5% 3%;
 
-        }
+    //     }
 
-        &-heading {
-            font-size: 14px;
-            line-height: 13px;
+    //     &-heading {
+    //         font-size: 14px;
+    //         line-height: 13px;
 
-        }
+    //     }
 
-        &-desc {
+    //     &-desc {
 
-            font-size: 12px;
-            line-height: 16px;
+    //         font-size: 12px;
+    //         line-height: 16px;
 
-            margin: 6px 0 9px;
+    //         margin: 6px 0 9px;
 
-        }
+    //     }
 
-        &-price {
-            font-size: 14px;
+    //     &-price {
+    //         font-size: 14px;
 
-        }
+    //     }
 
-    }
+    // }
 }
 
-@media (max-width:400px) {
+@media (max-width:450px) {
     .featured__item {
         flex: 1 1 90%;
 
