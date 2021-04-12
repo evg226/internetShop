@@ -230,11 +230,11 @@ body {
             &::marker {
                 display: none;
 
-                &::-webkit-details-marker {
+               
+            }
+            &::-webkit-details-marker {
                     display: none;
                 }
-            }
-
             :focus {
                 outline: none;
             }
