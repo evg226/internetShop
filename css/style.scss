@@ -104,6 +104,14 @@ body {
     }
 }
 
+#nav{
+    display: none;
+}
+
+#nav.open{
+    display: flex;
+}
+
 
 .item__cart {
     position: relative;

@@ -184,6 +184,16 @@ body {
   color: #F16D7F;
 }
 
+#nav {
+  display: none;
+}
+
+#nav.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .item__cart {
   position: relative;
   text-decoration: none;

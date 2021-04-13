@@ -28,13 +28,14 @@
                     </a>
                 </div>
                 <div class="navbar__side navbar__side-right">
-                    <a href="#" class="navbar__item item-hamburger">
+                    <a href="#" class="navbar__item item-hamburger" id="item-hamburger">
                         <img src="img/menu_hamb.svg" alt="Submenu icon">
 
-                        <ul class="subnav">
+                        <ul class="subnav" id='nav'>
                             <!-- <li class="subnav__item-close">1</li>
                             <li class="subnav__item-menu">Menu</li> -->
-                            <li class="subnav__item"><a href="#" class="subnav__link subnav__link-close">
+                            <li class="subnav__item"><a href="#" class="subnav__link subnav__link-close"
+                                    id="close_menu">
                                     <img src="img/close.svg" alt="Close">
                                 </a></li>
                             <li class="subnav__item"><a href="#"
@@ -446,6 +447,21 @@
             </div>
         </section>
     </footer>
+
+    <script>
+        var x = document.getElementById("item-hamburger");
+        var y = document.getElementById("close_menu");
+
+        x.addEventListener("click", myFunction);
+        y.addEventListener("click", myFunction);
+
+        function myFunction() {
+            var element = document.getElementById("nav");
+            element.classList.toggle("open");
+
+            x.classList.toggle("change");
+        }
+    </script>
 
 
 </body>
