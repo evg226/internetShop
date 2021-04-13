@@ -8,6 +8,7 @@ $height__navbar:75px;
 $height__banner__desktop:764px;
 
 
+
 // * {
 //     margin: 0;
 //     padding: 0;
@@ -287,8 +288,8 @@ body {
 
     &__item {
         background: #F8F8F8;
-        flex: 1 1 31%;
-        // max-width: 31%;
+        // flex: 0 0 31%;
+        width: 31%;
         // height: 580px;
         // margin-top: 30px;
         position: relative;
@@ -301,6 +302,7 @@ body {
 
             & img {
                 width: 100%;
+                // height: 355px;
             }
         }
 
@@ -581,11 +583,75 @@ body {
 }
 
 
+.breadcrumb{
+    display: flex;
+    justify-content: space-between;
+    min-height: 148px;
+    background: #F8F3F4; 
+    align-items: center;
+    text-transform: uppercase;
+    padding: 0 1%;
+   
+    &__left{
+        font-size: 24px;
+        color: $color__font__call;
+        
+    }    
+    &__link, &__right{
+        font-size: 14px;
+        color:#636363;
+        &-current{
+            color: $color__font__call;
+        }
+    } 
+    &__link:hover{
+        color: $color__font__call   ;
+    }
+     
+}
+
+.filter{
+    display: flex;
+    align-items: center;
+    margin:40px 0;
+      
+
+    &__item{
+        font-size: 14px;
+        color: #6F6E6E;
+        cursor: pointer;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        padding: 10px 1%;
+
+        &:hover{
+            color:#000000;
+        }
+        &::after{
+            content: url(../img/Filter2.svg);
+            margin-left: 8px;
+        }
+        &-main{
+            flex:0 0 33%;
+            
+             &::after{
+                content: url(../img/filter.svg);
+            // margin-left: 5px;
+                }
+         }
+    }
+    
+    
+   
+}
+
 
 
 @media(max-width:768px) {
     .featured__item {
-        flex: 1 1 45%;
+        // flex: 1 1 45%;
+        width:48% ;
     }
 
     .banner {
@@ -709,9 +775,9 @@ body {
 
 @media (max-width:450px) {
     .featured__item {
-        flex: 1 1 90%;
+        // flex: 1 1 90%;
 
-
+        width:98%
     }
 
     .subscribe {

@@ -381,9 +381,7 @@ body {
 
 .featured__item {
   background: #F8F8F8;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 31%;
-          flex: 1 1 31%;
+  width: 31%;
   position: relative;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -684,11 +682,86 @@ body {
   background: #F16D7F;
 }
 
+.breadcrumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 148px;
+  background: #F8F3F4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  padding: 0 1%;
+}
+
+.breadcrumb__left {
+  font-size: 24px;
+  color: #F16D7F;
+}
+
+.breadcrumb__link, .breadcrumb__right {
+  font-size: 14px;
+  color: #636363;
+}
+
+.breadcrumb__link-current, .breadcrumb__right-current {
+  color: #F16D7F;
+}
+
+.breadcrumb__link:hover {
+  color: #F16D7F;
+}
+
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+}
+
+.filter__item {
+  font-size: 14px;
+  color: #6F6E6E;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 1%;
+}
+
+.filter__item:hover {
+  color: #000000;
+}
+
+.filter__item::after {
+  content: url(../img/Filter2.svg);
+  margin-left: 8px;
+}
+
+.filter__item-main {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+}
+
+.filter__item-main::after {
+  content: url(../img/filter.svg);
+}
+
 @media (max-width: 768px) {
   .featured__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 45%;
-            flex: 1 1 45%;
+    width: 48%;
   }
   .banner__heading__big {
     font-size: 32px;
@@ -764,9 +837,7 @@ body {
 
 @media (max-width: 450px) {
   .featured__item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 90%;
-            flex: 1 1 90%;
+    width: 98%;
   }
   .subscribe__left__text {
     font-size: 13px;
