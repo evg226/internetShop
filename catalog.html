@@ -81,15 +81,17 @@
         </nav>
 
         <nav class="breadcrumb">
-            <div class="breadcrumb__left">
-                New Arrivals
-            </div>
-            <div class="breadcrumb__right">
-                <a href="index.html" class="breadcrumb__link">Home</a>
-                <span>/</span>
-                <a href="catalog.html" class="breadcrumb__link">Men</a>
-                <span>/</span>
-                <a href="#" class="breadcrumb__link breadcrumb__link-current">New Arrivals</a>
+            <div class="container breadcrumb__container">
+                <div class="breadcrumb__left">
+                    New Arrivals
+                </div>
+                <div class="breadcrumb__right">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
+                    <span>/</span>
+                    <a href="catalog.html" class="breadcrumb__link">Men</a>
+                    <span>/</span>
+                    <a href="#" class="breadcrumb__link breadcrumb__link-current">New Arrivals</a>
+                </div>
             </div>
         </nav>
 
@@ -97,12 +99,79 @@
 
     <main>
 
-        <div class="filter">
-            <a class="filter__item filter__item-main">Filter
-            </a>
-            <a class="filter__item">Trending now</a>
-            <a class="filter__item">Size</a>
-            <a class="filter__item">Prise</a>
+        <div class="filter container">
+            <details class="filter__item">
+                <summary>
+                    <span>Filter</span>
+                    <img src="img/filter.svg" alt="">
+                </summary>
+                <div class="filter__item-drop">
+                    <details open class="filter__subitem">
+                        <summary>Category</summary>
+                        <div class="filter__subitem-drop">
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                            <div class="filter__subitem-drop-link">Bags</div>
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                        </div>
+                    </details>
+                    <details class="filter__subitem">
+                        <summary>Category</summary>
+                        <div class="filter__subitem-drop">
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                            <div class="filter__subitem-drop-link">Bags</div>
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                        </div>
+                    </details>
+                    <details class="filter__subitem">
+                        <summary>Category</summary>
+                        <div class="filter__subitem-drop">
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                            <div class="filter__subitem-drop-link">Bags</div>
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                            <div class="filter__subitem-drop-link">Accesories</div>
+                        </div>
+                    </details>
+                </div>
+
+            </details>
+
+
+            <details class="filter__item">
+                <summary><span>Trending&nbsp;now</span>
+                    <img src="img/Filter2.svg" alt="">
+                </summary>
+                <div class="filter__item-drop">
+                    <div class="filter__subitem">Category</div>
+                    <div class="filter__subitem">Brand</div>
+                    <div class="filter__subitem">Designer</div>
+                </div>
+            </details>
+
+            <details class="filter__item">
+                <summary><span>Size
+                    </span> <img src="img/Filter2.svg" alt="">
+                </summary>
+                <div class="filter__item-drop">
+                    Category
+
+                </div>
+            </details>
+
+            <details class="filter__item">
+                <summary><span>Price</span>
+                    <img src="img/Filter2.svg" alt="">
+                </summary>
+                <div class="filter__item-drop">
+                    <div class="filter__subitem">Category</div>
+                    <div class="filter__subitem">Brand</div>
+                    <div class="filter__subitem">Designer</div>
+                </div>
+            </details>
+
+
+
 
         </div>
 
@@ -348,6 +417,19 @@
 
                 </article>
 
+                <div class="pages">
+                    <div class="pages__content">
+                        <a href="#" class="pages__link pages__link_browse">&lt;</a>
+                        <a href="#" class="pages__link pages__link_active">1</a>
+                        <a href="#" class="pages__link">2</a>
+                        <a href="#" class="pages__link">3</a>
+                        <a href="#" class="pages__link">4</a>
+                        <a href="#" class="pages__link">5</a>
+                        <a href="#" class="pages__link">6</a>
+                        <a href="#" class="pages__link pages__link_last">20</a>
+                        <a href="#" class="pages__link pages__link_browse">&gt;</a>
+                    </div>
+                </div>
 
             </div>
 
