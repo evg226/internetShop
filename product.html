@@ -99,112 +99,65 @@
 
     <main>
 
-        <nav class="filter">
+      <section class="product">
+          
+        <div class="product__picture">
+            <div class="product__page">&lt;</div>
+            <div class="product__image">
+                <img src="img/single.jpg" alt="">
+            </div>
+            <div class="product__page">&gt;</div>
+        </div>
+        <div class="product__white-box">
+            <div class="container"></div>
+        </div>
+        
+        <div class="container">
+            
+        <form action="#">
+            <div class="product__description">
+                <div class="product__collection">Woman collection</div>
+                <div class="product__3line">
+                    <div class="product__3line-part"></div>
+                    <div class="product__3line-part product__3line-part_active"></div>
+                    <div class="product__3line-part"></div>
+                </div>
+                <h2 class="product__caption">Mohito chip and chic</h2>
+                <p class="product__text">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. </p>
+                <div class="product__price">561$</div>
+                <div class="product__line"></div>
+                <div class="product__select">
+                    <select name="color" id="color">
+                        <option value="red">red</option>
+                        <option value="blue">blue</option>
+                        <option value="grey">grey</option>
+                    </select>
+                    <select name="size" id="size">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">xl</option>
+                    </select>
+                    <select name="quantity" id="quantity"></select>
+                </div>
+                <button type="submit" class="product__button">
+                    
+                    Add to Cart</button>
+            </div>
+        </form>
+    </div>
 
-            <ul class="container filter__container">
-                <li class="filter__item filter__item_1">
-
-                    <div class="filter__item-caption filter__item-caption-close">
-                        <span>Filter</span><img src="img/filter.svg" alt="">
-                    </div>
-                    <div class="filter__item-drop filter__item-drop-1">
-                        <details open class="filter__subitem">
-                            <summary class="summary_1">Category</summary>
-                            <div class="filter__subitem-drop">
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories</div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Bags</div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories</div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories</div>
-                            </div>
-                        </details>
-                        <details class="filter__subitem">
-                            <summary>Designer</summary>
-                            <div class="filter__subitem-drop">
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories</div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Bags</div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories</div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories</div>
-                            </div>
-                        </details>
-                        <details class=" filter__subitem">
-                            <summary>Price</summary>
-                            <div class="filter__subitem-drop">
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories
-                                </div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Bags</div>
-                                <div class="filter__subitem-drop-link filter__subitem-drop-link-1">Accesories
-                                </div>
-                                <div
-                                    class="filter__subitem-drop-link filter__subitem-drop-link-1 filter__subitem-drop-link-last">
-                                    Accesories</div>
-                            </div>
-                        </details>
-                    </div>
-                </li>
-
-                <li class="filter__item">
-
-                    <div class="filter__item-caption">
-                        <span>Trending&nbsp;now</span><img src="img/Filter2.svg" alt="">
-                    </div>
-                    <div class="filter__item-drop">
-
-                        <div class="filter__subitem-drop-link">Accesories</div>
-                        <div class="filter__subitem-drop-link">Bags</div>
-                        <div class="filter__subitem-drop-link">Accesories</div>
-                        <div class="filter__subitem-drop-link">Accesories</div>
-                    </div>
-                </li>
-
-                <li class="filter__item">
-
-                    <div class="filter__item-caption">
-                        <span>Size</span><img src="img/Filter2.svg" alt="">
-                    </div>
-                    <div class="filter__item-drop">
-                        <form action="#">
-                            <div class="filter__subitem-drop-link">
-                                <input type="checkbox" name="" id=""> XS
-                            </div>
-                            <div class="filter__subitem-drop-link">
-                                <input type="checkbox" name="" id=""> S
-                            </div>
-                            <div class="filter__subitem-drop-link">
-                                <input type="checkbox" name="" id=""> M
-                            </div>
-                            <div class="filter__subitem-drop-link">
-                                <input type="checkbox" name="" id=""> L
-                            </div>
-                        </form>
-                    </div>
-                </li>
-
-                <li class="filter__item">
-
-                    <div class="filter__item-caption">
-                        <span>Price</span><img src="img/Filter2.svg" alt="">
-                    </div>
-                    <div class="filter__item-drop filter__item-drop-4">
-
-                        <div class="filter__subitem-drop-link">100$</div>
-                        <div class="filter__subitem-drop-link">500$</div>
-                        <div class="filter__subitem-drop-link">1000$</div>
-                        <div class="filter__subitem-drop-link">More</div>
-                    </div>
-                </li>
-            </ul>
+      </section>  
 
 
-
-        </nav>
-
-        <section class="featured">
+        <!-- <section class="featured">
             <div class="featured__container container">
 
                 <article class="featured__box">
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature1.png" alt="">
                             </div>
@@ -230,7 +183,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature7.png" alt="">
                             </div>
@@ -256,7 +209,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature3.png" alt="">
                             </div>
@@ -282,7 +235,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature4.png" alt="">
                             </div>
@@ -308,7 +261,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature8.png" alt="">
                             </div>
@@ -334,7 +287,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature9.png" alt="">
                             </div>
@@ -360,7 +313,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature10.png" alt="">
                             </div>
@@ -386,7 +339,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature11.png" alt="">
                             </div>
@@ -412,7 +365,7 @@
                     </div>
 
                     <div class="featured__item">
-                        <a href="product.html" class="featured__item-link">
+                        <a href="#" class="featured__item-link">
                             <div class="featured__item-img">
                                 <img src="img/feature1.png" alt="">
                             </div>
@@ -456,57 +409,7 @@
 
             </div>
 
-        </section>
-
-
-        <section class="delivery">
-            <div class="delivery__box container">
-
-                <a href="#" class="delivery__card">
-                    <div class="delivery__img">
-                        <img src="img/delivery.svg" alt="">
-                    </div>
-                    <h2 class="delivery__cap">
-                        Free Delivery
-                    </h2>
-                    <div class="delivery__text">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
-                </a>
-
-                <a href="#" class="delivery__card">
-                    <div class="delivery__img">
-                        <img src="img/persent.svg" alt="">
-                    </div>
-                    <div class="delivery__cap">
-                        Sales & discounts
-                    </div>
-                    <div class="delivery__text">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
-                </a>
-
-                <a href="#" class="delivery__card">
-                    <div class="delivery__img">
-                        <img src="img/crown.svg" alt="">
-                    </div>
-                    <div class="delivery__cap">
-                        Quality assurance
-                    </div>
-                    <div class="delivery__text">
-                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                        models.
-                    </div>
-                </a>
-
-
-
-
-            </div>
-        </section>
-
+        </section> -->
 
     </main>
 
