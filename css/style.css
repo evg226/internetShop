@@ -1063,9 +1063,17 @@ body {
   padding: 5px;
 }
 
+.featured__container_product {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
 @media (max-width: 768px) {
   .featured__item {
     width: 48%;
+  }
+  .featured__item_product-disappear {
+    display: none;
   }
   .banner__heading__big {
     font-size: 32px;

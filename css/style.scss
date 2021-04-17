@@ -957,15 +957,22 @@ body {
         }
     }
 
+   
 
 }
 
-
+ .featured__container_product{
+        margin-top:10%;
+        margin-bottom: 10%;
+    }
 
 @media(max-width:768px) {
     .featured__item {
         // flex: 1 1 45%;
         width: 48%;
+        &_product-disappear{
+            display: none;
+        }
     }
 
     .banner {
