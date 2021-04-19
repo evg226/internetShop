@@ -16,8 +16,6 @@
 
 <body>
     <header>
-
-
         <nav class="navbar">
             <ul class="subnav" id='nav'>
                 <!-- <li class="subnav__item-close">1</li>
@@ -98,6 +96,7 @@
     <main>
 
         <section class="cartbox">
+        <form action="#">
             <div class="container cartbox__container">
                 <div class="cartbox__left">
                     <div class="cartbox__item">
@@ -135,10 +134,10 @@
                             <div class="cartbox__item-text">Color:&nbsp;&nbsp;<span>Red</span></div>
                             <div class="cartbox__item-text">Size:&nbsp;&nbsp;<span>XL</span></div>
                             <div class="cartbox__item-text">Quantity:&nbsp;&nbsp;
-                                <form action="#">
+                                
                                     <input class="cartbox__item-text_input" type="number" name="quantity" id="quantity"
                                         value="1">
-                                </form>
+                                
                             </div>
                         </div>
                     </div>
@@ -148,11 +147,26 @@
                     </div>
                 </div>
                 <div class="cartbox__right">
+                    <div class="cartbox__shipping">
+                    <h2 class="cartbox__header">
+                        Shipping Address
+                    </h2>
+                    <input class="cartbox__input" type="text" placeholder="Country">
+                    <input class="cartbox__input" type="text" placeholder="State">
+                    <input class="cartbox__input" type="tel" placeholder="postcode">
+                    <a href="#" class="cartbox__button cartbox__button_shipping">get a quote</a>
+                    </div>
+                    <div class="cartbox__proseed">
+                        <p class="cartbox__proseed-text-sub">Sub total <span>900$</span> </p>
+                        <p class="cartbox__proseed-text-grand">Grand total <span>900$</span> </p>
+                        <div class="cartbox__proseed-line"></div>
+                        <button class="cartbox__proseed-button">Proseed</button>
+                    </div>
 
                 </div>
             </div>
 
-
+        </form>
         </section>
 
 
