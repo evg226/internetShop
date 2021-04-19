@@ -63,7 +63,7 @@
 
 
                     </a>
-                    <a href="signup.html" class="navbar__item item_login">
+                    <a href="#" class="navbar__item item_login">
                         <img src="img/user.svg" alt="Login icon">
                     </a>
                     <a href="#" class="navbar__item item__cart">
@@ -81,12 +81,12 @@
         <nav class="breadcrumb">
             <div class="container breadcrumb__container">
                 <div class="breadcrumb__left">
-                    Shopping Cart
+                    Registration
                 </div>
                 <div class="breadcrumb__right">
                     <a href="index.html" class="breadcrumb__link">Home</a>
                     <span>/</span>
-                    <a href="#" class="breadcrumb__link breadcrumb__link-current">Cart</a>
+                    <a href="#" class="breadcrumb__link breadcrumb__link-current">Registration</a>
                 </div>
             </div>
         </nav>
@@ -95,77 +95,50 @@
 
     <main>
 
-        <section class="cartbox">
+        <section class="signup">
         <form action="#">
-            <div class="container cartbox__container">
-                <div class="cartbox__left">
-                    <div class="cartbox__item">
-                        <div class="cartbox__item-picture">
-                            <img src="img/cart-pic-1.png" alt="">
-                        </div>
-                        <div class="cartbox__item-desc">
-                            <div class="cartbox__item-header">
-                                Mango people T-shirt
-                            </div>
-                            <div class="cartbox__item-text">
-                                Price:&nbsp;&nbsp;<span class="cartbox__item-text_price">$300</span>
-                            </div>
-                            <div class="cartbox__item-text">Color:&nbsp;&nbsp;<span>Red</span></div>
-                            <div class="cartbox__item-text">Size:&nbsp;&nbsp;<span>XL</span></div>
-                            <div class="cartbox__item-text">Quantity:&nbsp;&nbsp;
-                                <form action="#">
-                                    <input class="cartbox__item-text_input" type="number" name="quantity" id="quantity"
-                                        value="1">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cartbox__item">
-                        <div class="cartbox__item-picture">
-                            <img src="img/cart-pic-2.png" alt="">
-                        </div>
-                        <div class="cartbox__item-desc">
-                            <div class="cartbox__item-header">
-                                Mango people T-shirt
-                            </div>
-                            <div class="cartbox__item-text">
-                                Price:&nbsp;&nbsp;<span class="cartbox__item-text_price">$300</span>
-                            </div>
-                            <div class="cartbox__item-text">Color:&nbsp;&nbsp;<span>Red</span></div>
-                            <div class="cartbox__item-text">Size:&nbsp;&nbsp;<span>XL</span></div>
-                            <div class="cartbox__item-text">Quantity:&nbsp;&nbsp;
-                                
-                                    <input class="cartbox__item-text_input" type="number" name="quantity" id="quantity"
-                                        value="1">
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cartbox__action">
-                        <a href="#" class="cartbox__button">Clear Shopping Cart</a>
-                        <a href="#" class="cartbox__button">Continue Shopping</a>
-                    </div>
+            <div class="signup__container container">
+                <div class="signup__left">
+                <div class="signup__header">Your name</div>
+                <input class="signup__input" type="text" placeholder="First Name">
+                <input class="signup__input" type="text" placeholder="Last Name">
+                
+                <div>
+                <label class="signup__label" for="male">
+                    <input class="signup__input" type="radio" name="gender" id="male">
+                    Male
+                </label>
+                
+                <label class="signup__label" for="female">
+                    <input class="signup__input" type="radio" name="gender" id="female">
+                    Female
+                </label>
+            </div>
+                <h2 class="signup__header">Login details</h2>
+                <input class="signup__input" type="email" placeholder="E-mail">
+                <input class="signup__input" type="password" placeholder="Password">
+                <div class="signup__text">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
                 </div>
-                <div class="cartbox__right">
-                    <div class="cartbox__shipping">
-                    <h2 class="cartbox__header">
-                        Shipping Address
-                    </h2>
-                    <input class="cartbox__input" type="text" placeholder="Country">
-                    <input class="cartbox__input" type="text" placeholder="State">
-                    <input class="cartbox__input" type="tel" placeholder="postcode">
-                    <a href="#" class="cartbox__button cartbox__button_shipping">get a quote</a>
-                    </div>
-                    <div class="cartbox__proseed">
-                        <p class="cartbox__proseed-text-sub">Sub total <span>900$</span> </p>
-                        <p class="cartbox__proseed-text-grand">Grand total <span>900$</span> </p>
-                        <div class="cartbox__proseed-line"></div>
-                        <button class="cartbox__proseed-button">Proseed</button>
-                    </div>
+                <button class="signup__button">Join now</button>
+                </div>
+                <div class="signup__right">
+                    <h2 class="signup__desc">LOYALTY HAS ITS PERKS</h2>
+                    <ul class="signup__desc"> Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                        <li class="signup__desc">15% off welcome offer
+                        </li>
+                        <li class="signup__desc">Free shipping, returns and exchanges on all orders
 
+                        </li>
+                        <li class="signup__desc">$10 off a purchase on your birthday
+
+                        </li>
+                        <li class="signup__desc">Early access to products</li>
+                        <li class="signup__desc">Exclusive offers & rewards</li>
+                    </ul>
+                    
                 </div>
             </div>
-
         </form>
         </section>
 

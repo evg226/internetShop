@@ -941,6 +941,70 @@ body {
   transform: scale(1.1);
 }
 
+.signup__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.signup__left {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 360px;
+}
+.signup__right {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 650px;
+  margin-left: 5%;
+}
+.signup__header {
+  font-size: 1rem;
+  color: #222222;
+  font-weight: 300;
+}
+.signup__input {
+  font-weight: 300;
+  font-size: 0.81rem;
+  color: #B1B1B1;
+  border: 1px solid #A4A4A4;
+  margin-right: 5px;
+  padding: 12px 17px;
+}
+.signup__label {
+  font-weight: 300;
+  color: #000000;
+  font-size: 0.688rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+}
+.signup__text {
+  font-weight: 300;
+  font-size: 0.722rem;
+  line-height: 1rem;
+  color: #B1B1B1;
+}
+.signup__button {
+  font-size: 0.875rem;
+  color: #FFFFFF;
+  background: #F16D7F;
+  padding: 16px 29px;
+  text-transform: uppercase;
+}
+.signup__button:hover {
+  transform: scale(1.1);
+}
+.signup__desc {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.813rem;
+  color: #000000;
+}
+.signup__desc > li::before {
+  content: url(../img/ok.svg);
+  margin-right: 22px;
+}
+
 @media (max-width: 768px) {
   .featured__item {
     width: 48%;
