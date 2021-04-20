@@ -945,6 +945,8 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
+  margin-top: 64px;
+  margin-bottom: 90px;
 }
 .signup__left {
   display: flex;
@@ -955,20 +957,28 @@ body {
   display: flex;
   flex-direction: column;
   flex: 0 1 650px;
-  margin-left: 5%;
+  margin: 0 5%;
 }
 .signup__header {
   font-size: 1rem;
   color: #222222;
   font-weight: 300;
+  margin-bottom: 20px;
+}
+.signup__radio-gr {
+  margin-bottom: 20px;
 }
 .signup__input {
   font-weight: 300;
   font-size: 0.81rem;
   color: #B1B1B1;
   border: 1px solid #A4A4A4;
-  margin-right: 5px;
   padding: 12px 17px;
+  margin-bottom: 20px;
+}
+.signup__input_radio {
+  margin-bottom: 0;
+  margin-right: 8px;
 }
 .signup__label {
   font-weight: 300;
@@ -983,13 +993,16 @@ body {
   font-size: 0.722rem;
   line-height: 1rem;
   color: #B1B1B1;
+  margin-bottom: 35px;
+  margin-top: -10px;
 }
 .signup__button {
   font-size: 0.875rem;
   color: #FFFFFF;
   background: #F16D7F;
-  padding: 16px 29px;
+  padding: 16px 0;
   text-transform: uppercase;
+  max-width: 50%;
 }
 .signup__button:hover {
   transform: scale(1.1);
@@ -999,10 +1012,15 @@ body {
   font-size: 1.5rem;
   line-height: 1.813rem;
   color: #000000;
+  margin-top: 16px;
 }
 .signup__desc > li::before {
   content: url(../img/ok.svg);
   margin-right: 22px;
+}
+.signup__desc_header {
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 @media (max-width: 768px) {
@@ -1075,6 +1093,17 @@ body {
     width: 45%;
     padding: 6% 5%;
     align-self: center;
+  }
+
+  .signup__left {
+    flex: 0 1 50%;
+  }
+  .signup__right {
+    flex: 0 1 50%;
+  }
+  .signup__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (max-width: 550px) {
@@ -1230,6 +1259,23 @@ body {
   .cartbox__proseed {
     padding: 10%;
     width: 100%;
+    margin-top: 40px;
+  }
+
+  .signup__container {
+    flex-direction: column;
+  }
+  .signup__left {
+    flex: 0 0 100%;
+  }
+  .signup__right {
+    flex: 0 0 100%;
+  }
+  .signup__desc {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .signup__desc_header {
     margin-top: 40px;
   }
 }

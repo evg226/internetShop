@@ -1173,6 +1173,8 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 0 10px;
+        margin-top: 64px;
+        margin-bottom: 90px;
 
     }
 
@@ -1180,19 +1182,26 @@ body {
         display: flex;
         flex-direction: column;
         flex: 0 0 360px;
+
     }
 
     &__right {
         display: flex;
         flex-direction: column;
         flex: 0 1 650px;
-        margin-left: 5%;
+        margin: 0 5%;
     }
 
     &__header {
         font-size: 1rem;
         color: #222222;
         font-weight: 300;
+        margin-bottom: 20px;
+
+    }
+
+    &__radio-gr {
+        margin-bottom: 20px;
     }
 
     &__input {
@@ -1200,9 +1209,15 @@ body {
         font-size: 0.81rem;
         color: #B1B1B1;
         border: 1px solid #A4A4A4;
-        margin-right: 5px;
         padding: 12px 17px;
+        margin-bottom: 20px;
+
+        &_radio {
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
     }
+
 
     &__label {
         font-weight: 300;
@@ -1218,31 +1233,43 @@ body {
         font-size: 0.722rem;
         line-height: 1rem;
         color: #B1B1B1;
+        margin-bottom: 35px;
+        margin-top: -10px;
     }
 
     &__button {
         font-size: 0.875rem;
         color: #FFFFFF;
         background: $color__font__call;
-        padding: 16px 29px;
+        padding: 16px 0;
         text-transform: uppercase;
+        max-width: 50%;
 
         &:hover {
             transform: scale(1.1);
         }
     }
 
+
     &__desc {
         font-weight: 300;
         font-size: 1.5rem;
         line-height: 1.813rem;
         color: #000000;
+        margin-top: 16px;
 
         &>li::before {
             content: url(../img/ok.svg);
             margin-right: 22px;
         }
+
+        &_header {
+            margin-bottom: 10px;
+            margin-top: 0;
+        }
     }
+
+
 }
 
 
@@ -1347,6 +1374,22 @@ body {
             align-self: center;
         }
     }
+
+    .signup {
+        &__left {
+            flex: 0 1 50%;
+        }
+
+        &__right {
+            flex: 0 1 50%;
+        }
+
+        &__desc {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+    }
 }
 
 @media (max-width:550px) {
@@ -1370,6 +1413,8 @@ body {
 
 
     }
+
+
 
 }
 
@@ -1540,13 +1585,6 @@ body {
             padding: 10px 0;
 
 
-            // &_shipping {
-            //     font-size: 11px;
-            //     padding: 9px 3px;
-            //     align-self: flex-start;
-            //     width: 40%;
-            // }
-
         }
 
         &__right {
@@ -1561,21 +1599,6 @@ body {
             width: 100%;
         }
 
-        // &__header {
-        //     font-size: 16px;
-        //     color: #222222;
-        //     text-transform: uppercase;
-        //     margin-bottom: 20px;
-        // }
-
-        // &__input {
-        //     border: 1px solid #A4A4A4;
-        //     font-size: 13px;
-        //     color: #B1B1B1;
-        //     padding: 12px 15px;
-
-        //     margin-bottom: 20px;
-        // }
 
         &__proseed {
 
@@ -1583,58 +1606,37 @@ body {
             width: 100%;
             margin-top: 40px;
 
-            //     &-text-sub {
-            //         text-transform: uppercase;
-            //         color: #4A4A4A;
-            //         font-size: 11px;
-            //         margin-bottom: 12px;
-            //         text-align: right;
 
-            //         & span {
-            //             margin-left: 11px;
-            //         }
-            //     }
-
-            //     &-text-grand {
-            //         font-weight: 300;
-            //         font-size: 16px;
-            //         color: #222222;
-            //         text-align: right;
-
-            //         & span {
-            //             margin-left: 16px;
-            //             font-weight: 700;
-            //             color: $color__font__call;
-            //         }
-            //     }
-
-            //     &-line {
-            //         height: 1px;
-            //         background: #A4A4A4;
-            //         // width: 100%;
-            //         margin: 20px 0 17px;
-            //     }
-
-            //     &-button {
-            //         color: #FFFFFF;
-            //         background: $color__font__call;
-            //         border: 1px solid $color__font__call;
-            //         font-weight: 300;
-            //         font-size: 16px;
-
-            //         padding: 15px 0;
-            //         // width: 100%;
-
-            //         &:hover {
-            //             transform: scale(1.1);
-            //         }
-            //     }
         }
 
 
     }
 
+    .signup {
+        &__container {
+            flex-direction: column;
+        }
 
+        &__left {
+            flex: 0 0 100%;
+        }
+
+        &__right {
+            flex: 0 0 100%;
+        }
+
+        &__desc {
+            font-size: 1rem;
+            line-height: 1.5rem;
+
+            &_header {
+                margin-top: 40px;
+            }
+        }
+
+
+
+    }
 
 }
 
