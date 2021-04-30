@@ -1,0 +1,115 @@
+$color-name:#6f6e6e;
+$color-price:$color-brand;
+
+
+.products__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products__card {
+    flex: 0 0 265px;
+    max-width: 265px;
+    position: relative;
+    margin: 0.7%;
+
+    &-link {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+        background: $color-el-back;
+        height: 280px;
+
+        & img {
+            height: 100%;
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-caption {
+        color: $color-name;
+        text-transform: uppercase;
+        margin: 20px;
+    }
+
+    &-price {
+        color: $color-price;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        margin: 0 20px 20px;
+    }
+
+    &-cart {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+
+        &-link {
+            padding: 14px;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            font-size: 13px;
+            color: #ffffff;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            margin-bottom: 7px;
+
+
+            &::before {
+                content: url(../img/product/add_to_cart.png);
+                margin-right: 6px;
+            }
+
+            &:hover {
+                box-shadow: 0 0 20px #ffffff;
+            }
+
+            &-row {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &2,
+            &3 {
+                width: 47%;
+                display: flex;
+                justify-content: center;
+            }
+
+            &2::before {
+                content: url(../img/product/cart2.svg);
+                margin-left: 5px;
+            }
+
+            &3::before {
+                content: url(../img/product/cart3.svg);
+                margin-left: 5px;
+            }
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px $color-box-shadow;
+
+        & .products__card-cart {
+            display: flex;
+        }
+
+        & .products__card-img {
+            filter: brightness(50%);
+        }
+    }
+}

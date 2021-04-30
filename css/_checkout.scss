@@ -1,0 +1,127 @@
+@keyframes openDetails {
+    from {
+        transform: scale(0.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.checkout {
+    margin-top: 80px;
+
+    &__item {
+        margin-top: 50px;
+
+
+        &[open] .checkout__body {
+
+            animation: openDetails 1s;
+        }
+
+        & summary {
+            cursor: pointer;
+            list-style-type: none;
+            font-size: 16px;
+            color: $color-top;
+            font-weight: 700;
+
+            &::marker {
+                display: none;
+            }
+
+            &::-webkit-details-marker {
+                display: none;
+            }
+
+            &::-moz-details-marker {
+                display: none;
+            }
+
+            &:hover {
+                transform: translateX(5px);
+            }
+        }
+    }
+
+    &__body {
+        display: flex;
+        padding: 20px;
+
+        &-col {
+            flex: 0 0 50%;
+        }
+
+        &-txtblock {
+            margin: 25px 0;
+        }
+
+        &-caption {
+            font-size: 13px;
+            color: $color-top;
+            font-weight: 400;
+
+            &-input {
+                margin: 15px 0;
+            }
+
+            & span {
+                color: $color-brand;
+            }
+        }
+
+        &-text {
+            font-size: 13px;
+            color: #b3b2b2;
+            margin-top: 10px;
+            font-weight: 400;
+
+            & span {
+                color: $color-brand;
+            }
+
+            &-forgot {
+                font-size: 13px;
+                color: #b3b2b2;
+                font-weight: 400;
+            }
+        }
+
+        &-input {
+            border: 1px solid #b3b2b2;
+            display: flex;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #b3b2b2;
+            padding: 5px;
+            width: 180px;
+            font-weight: 400;
+        }
+
+        &-button {
+            text-transform: uppercase;
+            font-size: 14px;
+            color: $color-top;
+            border: 1px solid $color-border-top;
+            padding: 14px 40px;
+            margin-right: 20px;
+            width: 180px;
+            text-align: center;
+            font-weight: 400;
+            background: none;
+            transition: hover 1s ease;
+
+            &:hover {
+                background: $color-el-back;
+                transform: scale(1.1);
+            }
+
+            &-right {
+                margin-top: 58px;
+            }
+
+        }
+
+    }
+}
