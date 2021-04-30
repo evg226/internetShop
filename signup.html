@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Internet Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="subnav" id='nav'>
+                <!-- <li class="subnav__item-close">1</li>
+                <li class="subnav__item-menu">Menu</li> -->
+                <li class="subnav__item">
+                    <a href="#" class="subnav__link subnav__link-close" id="close_menu">
+                        <img src="img/close.svg" alt="Close">
+                    </a>
+                </li>
+                <li class="subnav__item"><a href="#" class="subnav__link subnav__link-gr subnav__link-menu">menu</a>
+                </li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link subnav__link-gr">Man</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Accessories</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Bags</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Denim</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">T-shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link subnav__link-gr">Woman</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Accessories</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Jackets</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Polos</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">T-shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link subnav__link-gr">Kids</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Accessories</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Jackets&Coats</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Polos</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">T-shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Bags</a></li>
+            </ul>
+
+            <div class="navbar__container container">
+                <div class="navbar__side">
+                    <a href="index.html" class="navbar__item item_home ">
+                        <img src="img/menu1.svg" alt="Home icon">
+                    </a>
+                    <a href="#" class="navbar__item item_search">
+                        <img src="img/menu-search.svg" alt="Search icon">
+                    </a>
+                </div>
+                <div class="navbar__side navbar__side-right">
+                    <a href="#" class="navbar__item item-hamburger" id="item-hamburger">
+                        <img src="img/menu_hamb.svg" alt="Submenu icon">
+
+
+
+                    </a>
+                    <a href="#" class="navbar__item item_login">
+                        <img src="img/user.svg" alt="Login icon">
+                    </a>
+                    <a href="#" class="navbar__item item__cart">
+                        <img src="img/cart.svg" alt="Submenu icon">
+                        <div class="item__cart__count">
+                            2
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <nav class="breadcrumb">
+            <div class="container breadcrumb__container">
+                <div class="breadcrumb__left">
+                    Registration
+                </div>
+                <div class="breadcrumb__right">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
+                    <span>/</span>
+                    <a href="#" class="breadcrumb__link breadcrumb__link-current">Registration</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="signup">
+        <form action="#">
+            <div class="signup__container container">
+                <div class="signup__left">
+                <div class="signup__header">Your name</div>
+                <input class="signup__input" type="text" placeholder="First Name">
+                <input class="signup__input" type="text" placeholder="Last Name">
+                
+                <div>
+                <div class="signup__radio-gr">
+                <label class="signup__label" for="male">
+                    <input class="signup__input signup__input_radio" type="radio" name="gender" id="male">
+                    Male
+                </label>
+                <label class="signup__label" for="female">
+                    <input class="signup__input signup__input_radio" type="radio" name="gender" id="female">
+                    Female
+                </label>
+                </div>
+
+            </div>
+                <h2 class="signup__header">Login details</h2>
+                <input class="signup__input" type="email" placeholder="E-mail">
+                <input class="signup__input" type="password" placeholder="Password">
+                <div class="signup__text">
+                    Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
+                </div>
+                <button class="signup__button">Join now</button>
+                </div>
+                <div class="signup__right">
+                    <h2 class="signup__desc signup__desc_header">LOYALTY HAS ITS PERKS</h2>
+                    <div class="signup__desc">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</div>    
+                    <ul class="signup__desc"> 
+                        <li class="signup__desc">15% off welcome offer
+                        </li>
+                        <li class="signup__desc">Free shipping, returns and exchanges on all orders
+
+                        </li>
+                        <li class="signup__desc">$10 off a purchase on your birthday
+
+                        </li>
+                        <li class="signup__desc">Early access to products</li>
+                        <li class="signup__desc">Exclusive offers & rewards</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </form>
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="subscribe">
+            <div class="container subscribe__container">
+                <figure class="subscribe__card">
+                    <div>
+                        <img src="img/Intersect.png" alt="">
+                    </div>
+                    <figcaption class="subscribe__left__text">
+                        “Vefigurebulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                    </figcaption>
+                </figure>
+
+                <div class="subscribe__card">
+                    <div class="subscribe__right__heading">
+                        subscribe
+                    </div>
+                    <div class="subscribe__right__text">
+                        FOR OUR NEWLETTER AND PROMOTION
+                    </div>
+                    <form class="subscribe__form" action="#" method="get">
+
+                        <input class="email" type="email" name="email" placeholder="email@server.com">
+                        <input class="button" type="submit" value="Subscribe">
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+        <section class="copyright">
+            <div class="copyright__container container">
+                <h3 class="copyright_left">
+                    &copy; evg226 2021 Brand All Rights Reserved.
+                </h3>
+                <div class="social">
+
+                    <a class="social__item" href="#">
+                        <img src="img/p.svg" alt="">
+                    </a>
+                    <a class="social__item" href="#">
+                        <img src="img/insta.svg" alt="">
+                    </a>
+                    <a class="social__item" href="#">
+                        <img src="img/f.svg" alt="">
+                    </a>
+                    <a class="social__item" href="#">
+                        <img src="img/tw.svg" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        var x = document.getElementById("item-hamburger");
+        var y = document.getElementById("close_menu");
+
+        x.addEventListener("click", myFunction);
+        y.addEventListener("click", myFunction);
+
+        function myFunction() {
+            var element = document.getElementById("nav");
+            element.classList.toggle("open");
+
+            x.classList.toggle("change");
+        }
+    </script>
+
+
+</body>
+
+</html>

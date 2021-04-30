@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- <link rel="stylesheet" href="css/reset.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Internet Shop</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="subnav" id='nav'>
+                <!-- <li class="subnav__item-close">1</li>
+                <li class="subnav__item-menu">Menu</li> -->
+                <li class="subnav__item">
+                    <a href="#" class="subnav__link subnav__link-close" id="close_menu">
+                        <img src="img/close.svg" alt="Close">
+                    </a>
+                </li>
+                <li class="subnav__item"><a href="#" class="subnav__link subnav__link-gr subnav__link-menu">menu</a>
+                </li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link subnav__link-gr">Man</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Accessories</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Bags</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Denim</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">T-shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link subnav__link-gr">Woman</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Accessories</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Jackets</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Polos</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">T-shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link subnav__link-gr">Kids</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Accessories</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Jackets&Coats</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Polos</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">T-shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Shirts</a></li>
+                <li class="subnav__item"><a href="catalog.html" class="subnav__link">Bags</a></li>
+            </ul>
+
+            <div class="navbar__container container">
+                <div class="navbar__side">
+                    <a href="index.html" class="navbar__item item_home ">
+                        <img src="img/menu1.svg" alt="Home icon">
+                    </a>
+                    <a href="#" class="navbar__item item_search">
+                        <img src="img/menu-search.svg" alt="Search icon">
+                    </a>
+                </div>
+                <div class="navbar__side navbar__side-right">
+                    <a href="#" class="navbar__item item-hamburger" id="item-hamburger">
+                        <img src="img/menu_hamb.svg" alt="Submenu icon">
+
+
+
+                    </a>
+                    <a href="signup.html" class="navbar__item item_login">
+                        <img src="img/user.svg" alt="Login icon">
+                    </a>
+                    <a href="#" class="navbar__item item__cart">
+                        <img src="img/cart.svg" alt="Submenu icon">
+                        <div class="item__cart__count">
+                            2
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <nav class="breadcrumb">
+            <div class="container breadcrumb__container">
+                <div class="breadcrumb__left">
+                    Shopping Cart
+                </div>
+                <div class="breadcrumb__right">
+                    <a href="index.html" class="breadcrumb__link">Home</a>
+                    <span>/</span>
+                    <a href="#" class="breadcrumb__link breadcrumb__link-current">Cart</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="cartbox">
+        <form action="#">
+            <div class="container cartbox__container">
+                <div class="cartbox__left">
+                    <div class="cartbox__item">
+                        <div class="cartbox__item-picture">
+                            <img src="img/cart-pic-1.png" alt="">
+                        </div>
+                        <div class="cartbox__item-desc">
+                            <div class="cartbox__item-header">
+                                Mango people T-shirt
+                            </div>
+                            <div class="cartbox__item-text">
+                                Price:&nbsp;&nbsp;<span class="cartbox__item-text_price">$300</span>
+                            </div>
+                            <div class="cartbox__item-text">Color:&nbsp;&nbsp;<span>Red</span></div>
+                            <div class="cartbox__item-text">Size:&nbsp;&nbsp;<span>XL</span></div>
+                            <div class="cartbox__item-text">Quantity:&nbsp;&nbsp;
+                                
+                                    <input class="cartbox__item-text_input" type="number" name="quantity" value="1">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartbox__item">
+                        <div class="cartbox__item-picture">
+                            <img src="img/cart-pic-2.png" alt="">
+                        </div>
+                        <div class="cartbox__item-desc">
+                            <div class="cartbox__item-header">
+                                Mango people T-shirt
+                            </div>
+                            <div class="cartbox__item-text">
+                                Price:&nbsp;&nbsp;<span class="cartbox__item-text_price">$300</span>
+                            </div>
+                            <div class="cartbox__item-text">Color:&nbsp;&nbsp;<span>Red</span></div>
+                            <div class="cartbox__item-text">Size:&nbsp;&nbsp;<span>XL</span></div>
+                            <div class="cartbox__item-text">Quantity:&nbsp;&nbsp;
+                                
+                                    <input class="cartbox__item-text_input" type="number" name="quantity" value="1">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cartbox__action">
+                        <a href="#" class="cartbox__button">Clear Shopping Cart</a>
+                        <a href="#" class="cartbox__button">Continue Shopping</a>
+                    </div>
+                </div>
+                <div class="cartbox__right">
+                    <div class="cartbox__shipping">
+                    <h2 class="cartbox__header">
+                        Shipping Address
+                    </h2>
+                    <input class="cartbox__input" type="text" placeholder="Country">
+                    <input class="cartbox__input" type="text" placeholder="State">
+                    <input class="cartbox__input" type="tel" placeholder="postcode">
+                    <a href="#" class="cartbox__button cartbox__button_shipping">get a quote</a>
+                    </div>
+                    <div class="cartbox__proseed">
+                        <p class="cartbox__proseed-text-sub">Sub total <span>900$</span> </p>
+                        <p class="cartbox__proseed-text-grand">Grand total <span>900$</span> </p>
+                        <div class="cartbox__proseed-line"></div>
+                        <button class="cartbox__proseed-button">Proseed</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </form>
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="subscribe">
+            <div class="container subscribe__container">
+                <figure class="subscribe__card">
+                    <div>
+                        <img src="img/Intersect.png" alt="">
+                    </div>
+                    <figcaption class="subscribe__left__text">
+                        “Vefigurebulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                    </figcaption>
+                </figure>
+
+                <div class="subscribe__card">
+                    <div class="subscribe__right__heading">
+                        subscribe
+                    </div>
+                    <div class="subscribe__right__text">
+                        FOR OUR NEWLETTER AND PROMOTION
+                    </div>
+                    <form class="subscribe__form" action="#" method="get">
+
+                        <input class="email" type="email" name="email" placeholder="email@server.com">
+                        <input class="button" type="submit" value="Subscribe">
+
+                    </form>
+
+
+
+                </div>
+            </div>
+        </div>
+        <section class="copyright">
+            <div class="copyright__container container">
+                <h3 class="copyright_left">
+                    &copy; evg226 2021 Brand All Rights Reserved.
+                </h3>
+                <div class="social">
+
+                    <a class="social__item" href="#">
+                        <img src="img/p.svg" alt="">
+                    </a>
+                    <a class="social__item" href="#">
+                        <img src="img/insta.svg" alt="">
+                    </a>
+                    <a class="social__item" href="#">
+                        <img src="img/f.svg" alt="">
+                    </a>
+                    <a class="social__item" href="#">
+                        <img src="img/tw.svg" alt="">
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        var x = document.getElementById("item-hamburger");
+        var y = document.getElementById("close_menu");
+
+        x.addEventListener("click", myFunction);
+        y.addEventListener("click", myFunction);
+
+        function myFunction() {
+            var element = document.getElementById("nav");
+            element.classList.toggle("open");
+
+            x.classList.toggle("change");
+        }
+    </script>
+
+
+</body>
+
+</html>
