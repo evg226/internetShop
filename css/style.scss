@@ -7,21 +7,12 @@ $width__container__desktop:1140px;
 $height__navbar:75px;
 $height__banner__desktop:764px;
 
-
-
-// * {
-//     margin: 0;
-//     padding: 0;
-//     border: 0 none;
-// }
-
 @import "my_reset";
 
 body {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
-
 
 .container {
     max-width: $width__container__desktop;
@@ -110,12 +101,12 @@ body {
 }
 
 #nav {
-    display: none;
-}
-
-#nav.open {
     display: flex;
 }
+
+//#nav.open {
+//    display: flex;
+//}
 
 
 .item__cart {
@@ -326,7 +317,7 @@ body {
                 justify-content: center;
 
                 &::before {
-                    content: url(/img/Vector.svg);
+                    content: url(./img/Vector.svg);
                     padding-right: 8px;
                 }
 
@@ -399,7 +390,7 @@ body {
         border: 1px solid $color__font__call;
         padding: 14px 38px;
         margin-top: 4%;
-        // margin-bottom: 8%;
+        cursor:pointer;
     }
 
     &__button:hover {
