@@ -23,6 +23,13 @@ export default Vue.component("productList",{
 
 Vue.component("productItem",{
     props:["product"],
+    computed:{
+        productToCart(){
+            let result=this.product;
+            let {id,name,price,colorList,sizeList}=this.product;
+            return {id,name,price,color:colorList[0],size:sizeList[0]};
+        }
+    },
     template: `
             <div class="featured__item">
                 <a href="#" class="featured__item-link" @click="$parent.$emit('open-product',product)">
@@ -36,7 +43,7 @@ Vue.component("productItem",{
                     </div>
                 </a>
                 <div class="featured__item_add">
-                    <a href="cart.html" class="featured__item_add-link">Add to Cart</a>
+                    <a class="featured__item_add-link" @click="$parent.$emit('add-to-cart',productToCart)">Add to Cart</a>
                 </div>
            </div>
     `

@@ -2,7 +2,9 @@ export default Vue.component("product", {
     props: ["product"],
     data() {
         return {
-            pictureIndex: 1
+            pictureIndex: 1,
+            currentSize:"",
+            currentColor:""
         }
     },
     methods: {
@@ -10,8 +12,19 @@ export default Vue.component("product", {
             this.pictureIndex += step;
             (this.pictureIndex > 3) && (this.pictureIndex = 1);
             (this.pictureIndex < 1) && (this.pictureIndex = 3);
+        },
+        show(){
+            console.log(this.productToCart);
         }
     },
+    computed:{
+        productToCart(){
+            let result=this.product;
+            let {id,name,price,colorList,sizeList}=this.product;
+            return {id,name,price,color:this.currentColor?this.currentColor:colorList[0],size:this.currentSize?this.currentSize:sizeList[0]};
+        }
+    },
+
     template: `
            <section class="product">
                <div class="product__picture">
@@ -25,7 +38,7 @@ export default Vue.component("product", {
                 <div class="container"></div>
             </div>
             <div class="container">
-                <form action="#">
+                <form @submit.prevent="">
                     <div class="product__description">
                         <div class="product__collection">{{product.collection}} collection</div>
                         <div class="product__3line">
@@ -38,13 +51,13 @@ export default Vue.component("product", {
                         <div class="product__price">\${{product.price}}</div>
                         <div class="product__line"></div>
                         <div class="product__choose">
-                            <select name="color" id="color">
+                            <select name="color" id="color" v-model="currentColor">
                                 <option value="">Choose color</option>
-                                 <option v-for="colorItem of product.colorList" value="colorItem">{{colorItem}}</option>
+                                 <option v-for="colorItem of product.colorList" :value="colorItem">{{colorItem}}</option>
                             </select>
-                            <select name="size" id="size">
+                            <select name="size" id="size" v-model="currentSize">
                                 <option value="">Choose size</option>
-                                <option v-for="sizeItem of product.sizeList" value="sizeItem">{{sizeItem}}</option>
+                                <option v-for="sizeItem of product.sizeList" :value="sizeItem">{{sizeItem}}</option>
 <                           </select>
                             <select name="quantity" id="quantity">
                                 <option value="">quantity</option>
@@ -52,7 +65,8 @@ export default Vue.component("product", {
                                 <option value="Excelent">Excelent</option>
                             </select>
                         </div>
-                        <button type="submit" class="product__button">
+                        <button class="product__button" @click="$emit('add-to-cart',productToCart)"> 
+<!--        <button class="product__button" @click="show">-->
                             <img src="img/cart-red.svg" alt="">
                             Add to Cart</button>
                     </div>

@@ -7,21 +7,24 @@ const product=require("./product");
 const filters=require("./productFilter");
 const deliveryBox=require("./deliveryBox");
 const footers=require("./footer");
+const searchForm=require("./search");
+const cartPage = require("./cartPage");
+const singUp=require("./signup");
 
 const app = new Vue({
     el: "#app",
     data:{
         products:[
-            {id:1,name:"ELLERY X M'O CAPSULE",price:"45",color:"red",sizeList:["S","L","XL","XXL"], colorList:["red","blue","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:2,name:"ELLERY X M'O CAPSULE",price:"55",color:"red",sizeList:["S","M","XL","XXL"], colorList:["red","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:3,name:"ELLERY X M'O CAPSULE",price:"75",color:"red",sizeList:["S","XL","XXL"], colorList:["blue","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:4,name:"ELLERY X M'O CAPSULE",price:"105",color:"red",sizeList:["S","M","XL","XXL"], colorList:["red","blue"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:5,name:"ELLERY X M'O CAPSULE",price:"125",color:"red",sizeList:["L","XXL"], colorList:["red"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:6,name:"ELLERY X M'O CAPSULE",price:"450",color:"red",sizeList:["S","XL","XXL"], colorList:["black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:7,name:"ELLERY X M'O CAPSULE",price:"560",color:"red",sizeList:["S","M","XL","XXL"], colorList:["black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:8,name:"ELLERY X M'O CAPSULE",price:"1080",color:"red",sizeList:["S","XXL"], colorList:["red","blue"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:9,name:"ELLERY X M'O CAPSULE",price:"1560",color:"red",sizeList:["S","XL"], colorList:["red","blue"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
-            {id:10,name:"ELLERY X M'O CAPSULE",price:"2005",color:"red",sizeList:["L","XL","XXL"], colorList:["red","blue","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."}
+            {id:1,name:"Ellery Capsule",price:45,sizeList:["S","L","XL","XXL"], colorList:["red","blue","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:2,name:"Dolche Gabbana",price:55,sizeList:["S","M","XL","XXL"], colorList:["red","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:3,name:"Calvin kleine",price:75,sizeList:["S","XL","XXL"], colorList:["blue","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:4,name:"Zolla clothe",price:105,sizeList:["S","M","XL","XXL"], colorList:["red","blue"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:5,name:"Addias Shoes",price:125,sizeList:["L","XXL"], colorList:["red"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:6,name:"Nike Super ",price:450,sizeList:["S","XL","XXL"], colorList:["black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:7,name:"Charmalle Sss",price:560,sizeList:["S","M","XL","XXL"], colorList:["black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:8,name:"Max Boots",price:1080,sizeList:["S","XXL"], colorList:["red","blue"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:9,name:"Prime Industry",price:1560,sizeList:["S","XL"], colorList:["red","blue"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."},
+            {id:10,name:"My Super Clothes",price:2005,sizeList:["L","XL","XXL"], colorList:["red","blue","black"],collection:"women",quality:"good",description:"Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Ellery teams up with Moda Operandi."}
         ],
         productsMainOffer:[
             {id:1,category:"women",discount:"30% off"},
@@ -31,8 +34,12 @@ const app = new Vue({
         ],
         filteredProducts:[],
         selectedProduct:{},
-        cart:[],
+        cart:[
+            {id:5,name:"Addias Shoes",price:125,quantity:2,color:"red",size:"L"},
+            {id:6,name:"Nike Super ",price:450,quantity:1,color:"red",size:"S"},
+        ],
         isVisibleMenu:false,
+        isVisibleSearch:false,
         activePage:0,
         pages:[
             {name:"Home",path:"/"},
@@ -58,10 +65,25 @@ const app = new Vue({
             this.pages[this.activePage].name = product.name;
         },
         setFiltered(filtered) {
+            this.openPage(1);
+            this.isVisibleSearch=false;
             this.filteredProducts = [...filtered];
         },
         myFunction() {
             document.querySelector("#nav").classList.toggle("open");
+        },
+        addToCart(product){
+            let find=this.cart.find(item=>item.id==product.id);
+            if (find){
+                find.quantity++;
+            } else{
+                this.cart.push({...product,quantity:1});
+            }
+            console.log( `${product.name} has been  addded to cart`);
+        },
+        clearCart(){
+            this.cart=[];
+            console.log("Cart has been cleared");
         }
     },
     mounted(){
