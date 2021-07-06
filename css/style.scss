@@ -24,6 +24,28 @@ body {
     box-shadow: 0 0 10px $color__font__call;
 }
 
+.message{
+    position: fixed;
+    top:80px;
+    right:20px;
+    min-height: 80px;
+    min-width: 200px;
+    max-width: 280px;
+    background: $color__font__call;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    opacity: 0.9;
+    z-index: 9000;
+    &__body{
+        color:#FFFFFF;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
 .navbar {
     background: $color__main;
 
@@ -165,9 +187,6 @@ body {
         justify-content: center;
     }
 }
-
-
-
 
 .banner {
     max-height: $height__banner__desktop;

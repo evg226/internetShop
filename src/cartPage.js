@@ -8,7 +8,7 @@ Vue.component("cartPage",{
         }
     },
     computed:{
-        count(){
+        countCart(){
             return this.cart.reduce((accum,item)=>accum+(+item.quantity),0);
         },
         total(){
@@ -28,6 +28,7 @@ Vue.component("cartPage",{
         remove(item){
             this.cart.splice(this.cart.indexOf(item), 1);
             console.log( `${item.name} has been deleted from cart`);
+            this.$emit('set-message',`${item.name} has been deleted from cart`);
         },
         getAQuote(){
             this.country="Russia";
@@ -37,10 +38,13 @@ Vue.component("cartPage",{
         proceed(e){
             e.preventDefault();
             if (!(this.isCountry&&this.isState&&this.isPostCode)) {
+                this.$emit('set-message',"Error Shipping Address!");
                 console.log("Error Shipping Address!");
-            }   else if (this.cart.length==0){
+            }   else if (this.cart.length===0){
+                this.$emit('set-message',"You can add goods to Cart!");
                 console.log("You can add goods to Cart!");
             } else {
+                this.$emit('set-message',"Your order has been shipped");
                 console.log("Your order has been shipped");
             }
         },
@@ -66,7 +70,7 @@ Vue.component("cartPage",{
                                     <a href="#" class="cartbox__button cartbox__button_shipping" @click="getAQuote">get a quote</a>
                                 </div>
                                 <div class="cartbox__proseed">
-                                    <p class="cartbox__proseed-text-sub">Sub total <span>{{count}}</span> </p>
+                                    <p class="cartbox__proseed-text-sub">Sub total <span>{{countCart}}</span> </p>
                                     <p class="cartbox__proseed-text-grand">Grand total <span>\${{total}}</span> </p>
                                     <div class="cartbox__proseed-line"></div>
                                     <button class="cartbox__proseed-button" @click="proceed">Proseed</button>

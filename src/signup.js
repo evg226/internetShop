@@ -21,12 +21,10 @@ export  default Vue.component("signUp",{
     methods:{
         doRedister(){
             if (this.isName&&this.isLastName&&this.gender&&this.email){
-                console.log(this.name);
-            console.log(this.lastName);
-            console.log(this.gender);
-            console.log(this.email);
+                this.$emit('set-message',"You account has been registered");
             } else {
                 console.log("Error in data of forms");
+                this.$emit('set-message',"Error in data of forms");
             }
         }
 

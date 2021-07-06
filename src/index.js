@@ -10,6 +10,7 @@ const footers=require("./footer");
 const searchForm=require("./search");
 const cartPage = require("./cartPage");
 const singUp=require("./signup");
+const message=require("./message");
 
 const app = new Vue({
     el: "#app",
@@ -48,6 +49,7 @@ const app = new Vue({
             {name:"Cart",path:"/cart"},
             {name:"SignUP",path:"/signUp"},
             ],
+        message:""
     },
     methods: {
         openPage(pageNumber) {
@@ -68,6 +70,7 @@ const app = new Vue({
             this.openPage(1);
             this.isVisibleSearch=false;
             this.filteredProducts = [...filtered];
+            this.setMessage("You have set filter");
         },
         myFunction() {
             document.querySelector("#nav").classList.toggle("open");
@@ -80,13 +83,26 @@ const app = new Vue({
                 this.cart.push({...product,quantity:1});
             }
             console.log( `${product.name} has been  addded to cart`);
+            this.setMessage(`${product.name} has been  added to cart`);
         },
         clearCart(){
             this.cart=[];
             console.log("Cart has been cleared");
+            this.setMessage("Cart has been cleared");
+        },
+        setMessage(message){
+            this.message=message;
+            setTimeout(()=>this.message="",5000);
         }
+    },
+
+    computed:{
+        countCart(){
+            return this.cart.reduce((accum,item)=>accum+(+item.quantity),0);
+        },
     },
     mounted(){
         this.openPage(0);
+
     }
-})
+});

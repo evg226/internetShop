@@ -13,9 +13,6 @@ export default Vue.component("product", {
             (this.pictureIndex > 3) && (this.pictureIndex = 1);
             (this.pictureIndex < 1) && (this.pictureIndex = 3);
         },
-        show(){
-            console.log(this.productToCart);
-        }
     },
     computed:{
         productToCart(){
@@ -66,7 +63,6 @@ export default Vue.component("product", {
                             </select>
                         </div>
                         <button class="product__button" @click="$emit('add-to-cart',productToCart)"> 
-<!--        <button class="product__button" @click="show">-->
                             <img src="img/cart-red.svg" alt="">
                             Add to Cart</button>
                     </div>

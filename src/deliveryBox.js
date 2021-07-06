@@ -21,30 +21,6 @@ export default Vue.component("deliveryBox",{
                          {{item.description}}
                     </div>
                 </a>
-<!--                <a href="#" class="delivery__card">-->
-<!--                    <div class="delivery__img">-->
-<!--                        <img src="img/persent.svg" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="delivery__cap">-->
-<!--                        Sales & discounts-->
-<!--                    </div>-->
-<!--                    <div class="delivery__text">-->
-<!--                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive-->
-<!--                        models.-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--                <a href="#" class="delivery__card">-->
-<!--                    <div class="delivery__img">-->
-<!--                        <img src="img/crown.svg" alt="">-->
-<!--                    </div>-->
-<!--                    <div class="delivery__cap">-->
-<!--                        Quality assurance-->
-<!--                    </div>-->
-<!--                    <div class="delivery__text">-->
-<!--                        Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive-->
-<!--                        models.-->
-<!--                    </div>-->
-<!--                </a>-->
             </div>
         </section>
     `

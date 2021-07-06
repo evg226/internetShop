@@ -15,6 +15,7 @@
 <body>
 <div id="app">
 
+    <message v-if="message" :text="message"></message>
     <header>
 
         <nav class="navbar">
@@ -40,7 +41,7 @@
                     <a href="#" class="navbar__item item__cart"  @click="openPage(3)">
                         <img src="img/cart.svg" alt="Submenu icon">
                         <div class="item__cart__count">
-                            2
+                            {{countCart}}
                         </div>
                     </a>
                 </div>
@@ -62,15 +63,15 @@
 
         <product v-if="activePage==2" :product="selectedProduct" @add-to-cart="addToCart"></product>
 
-        <cart-page v-if="activePage==3" :cart="cart" @continue-shopping="openPage" @clear-cart="clearCart"></cart-page>
+        <cart-page v-if="activePage==3"  :cart="cart" @continue-shopping="openPage" @clear-cart="clearCart" @set-message="setMessage"></cart-page>
 
-        <sign-up v-if="activePage==4"></sign-up>
+        <sign-up v-if="activePage==4" @set-message="setMessage"></sign-up>
 
         <delivery-box v-if="activePage==0||activePage==1" @open-page="openPage"></delivery-box>
 
     </main>
 
-    <footers></footers>
+    <footers @set-message="setMessage"></footers>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <script src="build.js"></script>

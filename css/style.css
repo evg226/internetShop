@@ -79,6 +79,26 @@ body {
 .border-red {
   box-shadow: 0 0 10px #F16D7F; }
 
+.message {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  min-height: 80px;
+  min-width: 200px;
+  max-width: 280px;
+  background: #F16D7F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  opacity: 0.9;
+  z-index: 9000; }
+  .message__body {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px; }
+
 .navbar {
   background: #222222; }
   .navbar__container {

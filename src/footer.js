@@ -7,9 +7,10 @@ export default Vue.component("footers",{
     methods:{
         subsribe(){
             if (this.youMail.length>0) {
-                alert("You have been subcribed to mail:\n"+this.youMail);
+                this.$emit('set-message',"You have been subcribed to mail:\n"+this.youMail);
             } else {
                 document.forms.emailForm.email.style.boxShadow="0 0 10px red";
+                this.$emit('set-message',`Error in email address`);
             }
         },
         clearEmail(){
