@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Internet Shop</title>
+</head>
+
+<body>
+<div id="app">
+
+    <message v-if="message" :text="message"></message>
+    <header>
+
+        <nav class="navbar">
+            <top-menu v-show="isVisibleMenu" :is-visible-menu="isVisibleMenu" @change-menu-visible="isVisibleMenu=!isVisibleMenu" @open-page="openPage"></top-menu>
+
+            <div class="navbar__container container">
+                <div class="navbar__side">
+                    <a class="navbar__item item_home" @click="openPage(0)">
+                        <img src="img/menu1.svg" alt="Home icon">
+                    </a>
+                    <a href="#" class="navbar__item navbar__item-search" @click="isVisibleSearch=!isVisibleSearch">
+                        <img src="img/menu-search.svg" alt="Search icon">
+                    </a>
+                </div>
+                <search-form v-show="isVisibleSearch" :goods="products" @make-filter="setFiltered"></search-form>
+                <div class="navbar__side navbar__side-right">
+                    <a href="#" class="navbar__item item-hamburger" id="item-hamburger" @click="isVisibleMenu=!isVisibleMenu">
+                        <img src="img/menu_hamb.svg" alt="Submenu icon">
+                    </a>
+                    <a href="#" class="navbar__item item_login" @click="openPage(4)">
+                        <img src="img/user.svg" alt="Login icon">
+                    </a>
+                    <a href="#" class="navbar__item item__cart"  @click="openPage(3)">
+                        <img src="img/cart.svg" alt="Submenu icon">
+                        <div class="item__cart__count">
+                            {{countCart}}
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <banner v-if="activePage==0"></banner>
+
+        <breadcrumb v-if="activePage!=0" :active-page="activePage" :pages="pages" @open-page="openPage"></breadcrumb>
+
+    </header>
+
+    <main>
+        <main-offer v-if="activePage==0" :products="productsMainOffer" @open-products="openPage(1)"></main-offer>
+
+        <product-filter v-if="activePage==1" :products="products" @make-filter="setFiltered"></product-filter>
+
+        <product-list v-if="activePage==0||activePage==1" :products="filteredProducts" :active-page="activePage" @show-all-products="openPage(1)" @open-product="openProduct" @add-to-cart="addToCart"></product-list>
+
+        <product v-if="activePage==2" :product="selectedProduct" @add-to-cart="addToCart"></product>
+
+        <cart-page v-if="activePage==3"  :cart="cart" @continue-shopping="openPage" @clear-cart="clearCart" @set-message="setMessage"></cart-page>
+
+        <sign-up v-if="activePage==4" @set-message="setMessage"></sign-up>
+
+        <delivery-box v-if="activePage==0||activePage==1" @open-page="openPage"></delivery-box>
+
+    </main>
+
+    <footers @set-message="setMessage"></footers>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <script src="build.js"></script>
+</body>
+
+</html>
