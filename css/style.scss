@@ -70,7 +70,7 @@ body {
     &__item {
         display: flex;
         height: 100%;
-        padding: 0 15%;
+        padding: 7%;
 
         &:hover {
             transform: scale(1.2);
@@ -1545,6 +1545,11 @@ body {
 
 
 @media (max-width:450px) {
+
+    .navbar__container {
+        height: 60px;
+    }
+
     .featured__item {
         // flex: 1 1 90%;
 
